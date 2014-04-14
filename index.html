@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title>PhoneGap WP7</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.2.css" />
+    <link rel="stylesheet" href="master.css" />
+
+
+    <script src="jquery-1.11.0.js"></script>
+    <script src="jquery.mobile-1.4.2.js"></script>
+
+
+
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+
+    <script type="text/javascript">
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // once the device ready event fires, you can safely do your thing! -jm
+        function onDeviceReady() {
+
+            console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <div id="intro_page" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>EUROMOVE</h1>
+        </div>
+        <div data-role="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Welcome to EUROMOVE!</h1>
+            <br>
+            <br>
+            <h2>This is our application developed by the Comenius Project Team involving France, Ireland, and Holland.</h2>
+
+            <br>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-r">Enter Application</a>
+        </div>
+    </div>
+
+    <div id="menu" data-role="page">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>Menu</h1>
+            <a href="#intro_page" data-icon="delete">Back</a>
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>Choose a country to learn about:</p>
+            <br />
+            <ul data-role="listview">
+                <li><a href="#Ire_intro">Ireland</a></li>
+                <li><a href="#Fra_intro">France</a></li>
+                <li><a href="#Holl_intro">Holland</a></li>
+            </ul>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#intro_page" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+    <div id="Ire_intro" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>Ireland</h1>
+            <!--  <a href="https://www.dropbox.com/s/pcdjejds1zuzcou/charlemagne.jpg">Google</a> -->
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+<!--========================================================================FRANCE===============================================================-->
+    <div id="Fra_intro" data-role="page">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>France</h1>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <br />
+            <ol data-role="listview">
+                <li><a href="#Fr_histoire">Histoire</a></li>
+                <li><a href="#Fr_Géographie">Géographie</a></li>
+                <li><a href="#Fr_politique">Politique et économie</a></li>
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+
+    <!-- content of France --->
+    <div id="Fr_histoire" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Histoire de France </h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <h1>Histoire de France</h1>
+
+            <img src="./histoire/frise.jpg" width="300" height="200" alt="Frise chronologique de l'histoire de France" />
+            <p><em>Frise chronologique de l'histoire de France</em></p>
+            <br />
+            <ol data-role="listview">
+                <li><a href="#Fr_antiq">Antiquité</a></li>
+                <li><a href="#Fr_moyenage">Moyen Âge</a></li>
+                <li><a href="#Fr_tempmod">Temps modernes</a></li>
+                <li><a href="#Fr_epoq">Époque contemporaine</a></li>
+
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fra_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="Fr_antiq" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h3>Antiquité</h3>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>
+                L'Antiquité est la première des époques de l'Histoire. C'est par le développement ou l'adoption de l'écriture que l'Antiquité succède à la Préhistoire.
+            </p>
+            <br />
+            <img src="./histoire/vercingetorix.jpg" width="300" height="200" alt="Vercingétorix deposant ses armes aux pieds de Jules César" />
+
+            <p><em>Vercingétorix deposant ses armes aux pieds de Jules César</em></p>
+
+            <p>
+                Vercingétorix déposant les armes aux pieds de César après sa défaite à la bataille d’Alésia où il avait réuni tous les peuples Gaulois. Cela termine la conquête de la Gaule en 52 av. JC Vercingétorix (né aux environs de -80 sur le territoire des Arvernes, dans l'actuelle Auvergne, mort le 26 septembre -46 à Rome) est le fils du chef gaulois de la tribu des Arvernes. Il réunit la plupart des peuples gaulois et leurs chefs pour tenter de repousser le général romain Jules César, allié des quelques autres tribus gauloises, à la fin de la guerre des Gaules (-58 à -51). Vaincu à Alésia en -52, il est emprisonné, puis, six ans plus tard, exécuté à Rome à la suite du triomphe de César.
+            </p>
+            <h4>La romanisation de la Gaule :</h4>
+
+            <p>
+                Les Gaulois ont dans leur ensemble assez bien accepté la domination romaine et la France est née du mélange de la culture celtique et de la culture gréco-romaine
+            </p>
+
+            <p>
+                Une culture gallo- romaine se développe après l’intégration de la Gaule à l’Empire romain.
+		Les élites gauloises adoptent la culture romaine : elles adoptent le latin, se font construire des villas sur le modèle romain, la France se couvre de monuments romains et de voies romaines : aqueducs comme le Pont du Gard, théâtres romains, arènes, comme à 	Nîmes, des thermes sont construits,…
+            </p>
+
+            <p>
+                Dès lors la Gaule vit comme l’une des provinces de l’immense empire romain .L’empereur romain Claude est d’ailleurs né à Lyon. 
+            </p>
+
+            <img src="./histoire/empire-romain.jpg" width="300" height="200" alt="Carte de l'Empire romain et des ses différentes provinces" />
+            <p><em>Carte de l'Empire romain et des ses différentes provinces</em></p>
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Fr_moyenage" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Moyen Âge</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>
+                Le Moyen Âge s'étend de 476 à 1492. Il débuta avec l'effondrement de l'Empire romain d'Occident et se termina par la Renaissance et les Grandes découvertes. Située entre l'Antiquité et l'époque moderne, la période est subdivisée entre le haut Moyen Âge (VIe Xe siècle), le Moyen Âge central (XIe XIIIe siècle) et le Moyen Âge tardif (XIVe XVe siècle).
+            </p>
+
+            <img src="./histoire/charlemagne.jpg" width="300" height="200" alt="Portrait de Charlemagne" />
+            <p><em>Portrait de Charlemagne</em></p>
+            <p>
+                Charlemagne fut un empereur des VIIIe et IXe siècle
+            </p>
+
+            <p>
+                Charlemagne du latin Carolus Magnus, ou Charles Ier dit « le Grand », né en 742 et mort le 28 janvier 814 à Aix-la-Chapelle, est un membre de la dynastie franque à laquelle il a donné son nom alors qu'il n'en est pas le fondateur : les Carolingiens. Fils de Pépin le Bref, il est roi des Francs à partir de 768, devient par conquête roi des Lombards en 774 et est couronné empereur à Rome par le pape Léon III le 25 décembre 800. Monarque guerrier, il agrandit son royaume par une série de campagnes militaires, en particulier contre les Saxons païens dont la soumission a été très difficile et très violente (772-804), mais aussi contre les Lombards en Italie et les Musulmans d'Espagne.
+            </p>
+
+            <img src="./histoire/chevaliers.jpg" width="300" height="200" alt="Reconstitution de deux chevaliers en armure sur leur cheval" />
+            <p><em>Reconstitution de deux chevaliers en armure sur leur cheval</em></p>
+            <p>
+                Les chevaliers étaient des nobles qui combattaient pour leurs suzerains au Moyen-âge.
+            </p>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Fr_tempmod" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Temps modernes</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>
+                L'époque moderne (ou les temps modernes) couvre l'époque historique commençant à la fin du Moyen Âge, généralement placée en 1453 ou en 1492. Selon les historiens français, cette période s'arrête avec la Révolution française, marquée généralement en 1789 ou 1792, et c'est l'époque contemporaine qui lui succède.
+            </p>
+
+            <img src="./histoire/louis-xiv.jpg" width="300" height="200" alt="Représentation de Louis XIV, le Roi Soleil" />
+            <p><em>Représentation de Louis XIV, le Roi Soleil</em></p>
+            <p>
+                Louis XIV, roi de France au XVIIe siècle
+            </p>
+
+            <p>
+                Louis XIV dit Louis le Grand ou le Roi-Soleil, né le 5 septembre 1638 à Saint-Germain-en-Laye et mort le 1er septembre 1715 à Versailles, est un roi de France et de Navarre. Il règne sur le royaume de France du 14 mai 1643 à sa mort le 1er septembre 1715. Louis XIV monte en 1643 sur le trône au décès de son père Louis XIII, le 14 mai 1643, quelques mois avant ses cinq ans. Il est le 64e roi de France, le 44e roi de Navarre et le troisième des rois de la famille Bourbon. Son règne de 72 ans est l’un des plus longs de l'histoire de l'Europe. À partir de 1682, Louis XIV dirige son royaume depuis le vaste château de Versailles, modèle architectural de nombreux palais européens et dont il a dirigé la construction. Une cour soumet la noblesse, étroitement surveillée, à un protocole très élaborée. Le prestige culturel s'y affirme grâce au financement royal en faveur d'artistes tels que Molière, Racine, Boileau, Lully, Le Brun et Le Nôtre, ce qui favorise l'apogée du classicisme français, qualifié, dès son vivant, de « Grand Siècle », voire de « Siècle de Louis XIV ».
+            </p>
+
+            <img src="./histoire/versailles.jpg" width="300" height="200" alt="Photo du château de Versailles et de ses jardins" />
+            <p><em>Photo du château de Versailles et de ses jardins</em></p>
+            <p>
+                Château de Versailles, demeure construite par Louis XIV, dont les magnifiques jardins ont été créés par Le Nôtre
+            </p>
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+    <div id="Fr_epoq" data-role="page" style="background-color: #000000;">
+
+        <div data-role="header" style="background-color: #000000;">
+            Époque contemporaine
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <p>
+                L'époque contemporaine débute en 1789 et se poursuit jusqu'à nos jours. Quelques historiens font finir l'époque moderne en 1895 (invention du cinématographe) ou en 1896 (rénovation des Jeux olympiques), la période suivante et actuelle étant l'ère ou « l'époque de communication, spectacles et sports ». Mais ceci peut être contesté, la première moitié du XXe siècle étant l'aboutissement des idéologies et des nationalismes nés aux XVIIIe et XIXe siècles, les idéologies se radicalisant au XXe siècle et utilisant les médias, spectacles et sports. C'est aussi à l'époque contemporaine que se produit un accroissement démographique sans précédent dans l'histoire de l'humanité.
+            </p>
+
+            <img src="./histoire/prise-bastille.jpg" width="300" height="200" alt="La prison royale de la Bastille est prise d'assaut" />
+            <p><em>La prison royale de la Bastille est prise d'assaut</em></p>
+            <p>
+                La prise de la Bastille lors de la Révolution Française le 14 juillet 1789. Cette date est devenue la fête nationale.
+            </p>
+
+            <p>
+                Cette révolution met fin à la monarchie absolue en France et elle est remplacée par une monarchie constitutionnelle en 1791. La Révolution française est à l’origine d’une déclaration des droits de l’homme et du citoyen qui transforme profondément la société de l’époque : les hommes sont désormais considérés comme libres et égaux en droits et la souveraineté émane désormais du peuple et non plus d’une monarchie de droit divin. La liberté de choisir sa religion est reconnue. La Révolution est aussi à l’origine des structures politiques modernes de la France : la France est découpée en départements, les poids et mesures sont unifiés sur tout le territoire français.
+            </p>
+
+            <p>
+                En 1792 la France devient une République, mais celle-ci est éphémère.
+            </p>
+
+            <p>
+                En 1799 le coup d’Etat du général Bonaparte signe la mort de la République.
+            </p>
+
+            <p>
+                La France  connaît en réalité une très forte instabilité politique tout le long du XIXème siècle : entre 1791 et 1871 elle connaît : la monarchie constitutionnelle, le 1er empire et le second empire, 3 révolutions (les 3 Glorieuses en 1830, la révolution de 1848 et l’insurrection de la commune de Paris en 1871)  et  2 républiques.
+            </p>
+
+            <img src="./histoire/napoleon-bonaparte.jpg" width="300" height="200" alt="Napoléon Ier dans sa tenue d'empereur, s'inspirant de celle des empereurs romains." />
+            <p>
+                <em>Napoléon Bonaparte, empereur des Français au XIXe</em>
+            </p>
+
+            <p>
+                Napoléon Ier, né le 15 août 1769 à Ajaccio en Corse, dans le royaume de France, et mort le 5 mai 1821 sur l'île Sainte-Hélène, dans l'océan Atlantique, est le premier empereur des Français, du 18 mai 1804 au 6 avril 1814 et du 20 mars 1815 au 22 juin 1815. Second enfant de Charles Bonaparte et Letitia Ramolino, Napoléon Bonaparte est d'abord un militaire, général dans les armées de la Première République française, née de la Révolution, commandant en chef de l'armée d'Italie puis de l'armée d'Orient. Il parvient au pouvoir en 1799 par le coup d'État du 18 brumaire (9 novembre) et est Premier consul jusqu'au 2 août 1802, puis consul à vie jusqu'au 18 mai 1804, date à laquelle il est proclamé empereur. Enfin il est sacré empereur en la cathédrale Notre-Dame de Paris le 2 décembre 1804 par le pape Pie VII. En tant que général en chef et chef d'état, Napoléon tente de briser les coalitions montées et financées par le Royaume de Grande-Bretagne et qui rassemblent depuis 1792 les monarchies européennes contre la France et son régime né de la Révolution. Il conduit pour cela les armées françaises d'Italie au Nil et d'Autriche à la Prusse et à la Pologne : ses nombreuses et brillantes victoires (Arcole, Rivoli, Pyramides, Marengo, Austerlitz, Iéna, Friedland), dans des campagnes militaires rapides, disloquent les quatre premières coalitions. Les paix successives, qui mettent un terme à chacune de ces coalitions, renforcent la France et donnent à son chef, Napoléon, un degré de puissance jusqu'alors rarement égalé en Europe lors de la paix de Tilsit (1807).
+            </p>
+
+            <img src="./histoire/usines.jpg" width="300" height="200" alt="Photo en noir et blanc de plusieurs usines crachant de la fumée" />
+            <p>
+                <em>Une usine représentant la révolution industrielle</em>
+            </p>
+
+            <img src="./histoire/freres-lumiere.jpg" width="300" height="200" alt="Les frères Lumière, inventeurs du cinématographe, nés à Besançon en Franche-Comté" />
+            <p>
+                <em>Les frères Lumière, inventeurs du cinématographe, nés à Besançon en Franche-Comté</em>
+            </p>
+
+            <img src="./histoire/locomotive.jpg" width="300" height="200" alt="La locomotive à vapeur, innovation technologique du XIXe siècle" />
+            <p><em>La locomotive à vapeur, innovation technologique du XIXe siècle</em></p>
+            <img src="./histoire/anneaux-olympiques.jpg" width="300" height="200" alt="Les cinq anneaux olympinques bleu, jaune, noir, vert et rouge" />
+            <p><em>Les cinq anneaux olympinques bleu, jaune, noir, vert et rouge</em></p>
+            <p>
+                Les anneaux représentants les cinq continents. C’est Pierre de Coubertin, un Français, qui a inventé les Jeux Olympiques modernes, dont la 1ère édition a lieu à Athènes en 1896.
+            </p>
+
+            <img src="./histoire/degaulle.jpg" width="300" height="200" alt="De Gaulle lançant l'appel du 18 juin" />
+            <p><em>De Gaulle lançant l'appel du 18 juin</em></p>
+
+            <p>
+                Charles de Gaulle fut le 1er président de la Ve République, celle sous laquelle nous vivons actuellement.
+            </p>
+
+            <p>
+                Charles de Gaulle, né le 22 novembre 1890 à Lille et mort le 9 novembre 1970 à Colombey-les-Deux-Églises, est un général, résistant, écrivain et homme d'État français. Il est à la tête de la France du 3 juin 1944 au 20 janvier 1946 en tant que premier président du Gouvernement provisoire de la République française, puis du 8 janvier 1959 au 28 avril 1969 comme 18e président de la République française. Chef de la France libre puis dirigeant du Comité français de Libération nationale pendant la Seconde Guerre mondiale, président du Gouvernement provisoire de la République française de 1944 à 1946, président du Conseil des ministres français de 1958 à 1959, créateur de la Ve République fondée en 1958, il devient le 18e Président de la République française du 8 janvier 1959 au 28 avril 1969. Il est le premier à occuper la magistrature suprême sous la Cinquième République. Il rejette l'armistice demandé par Pétain à l'Allemagne nazie. De Londres, il lance, à la BBC, l'appel du 18 juin au peuple français pour résister et rejoindre les Forces françaises libres. Condamné à mort, et déclaré déchu de la nationalité Française par décret du 08 décembre 1940 par le régime de Vichy, il veut incarner la légitimité de la France et être reconnu en tant que puissance par les Alliés. Ne contrôlant que quelques colonies mais reconnu par la Résistance, il fusionne, en 1943, la France libre au sein du Comité français de Libération nationale, dont il finit par prendre la direction. Il dirige le pays à la Libération. Favorable à un exécutif fort, il s'oppose aux projets parlementaires des partis et démissionne en 1946. Il fonde le Rassemblement du peuple français (RPF), mais son refus de tout compromis avec le « régime des partis » l'isole dans une traversée du désert. De Gaulle revient au pouvoir lors de la crise du 13 mai 1958, pendant la guerre d'Algérie. Investi président du Conseil, il fait approuver la Ve République. Élu président de la République, il veut une « politique de grandeur » de la France. Il affermit les institutions, la monnaie (nouveau franc) et donne un rôle de troisième voie économique à un État planificateur et modernisateur de l'industrie. Il renonce par étapes à l'Algérie française, malgré l'opposition des Pieds-Noirs et des militaires, qui avaient favorisé son retour. Il décolonise aussi l'Afrique noire, en y maintenant l'influence française. De Gaulle prône l'« indépendance nationale » en rupture avec le fédéralisme européen et le partage de Yalta : il préconise donc une « Europe des nations » qui irait « de l'Atlantique à l'Oural », réalise la force de dissuasion nucléaire française, retire la France du commandement militaire de l'OTAN, pose un veto à l'entrée du Royaume-Uni dans la Communauté européenne, soutient le « Québec libre », condamne la guerre du Viêt Nam et reconnait la Chine communiste.
+            </p>
+
+            <h3>L'Europe</h3>
+
+            <p>
+                En Mai 1950 c’est un homme politique français Robert Schuman qui propose aux pays européens de mettre en commun leur production de charbon et d’acier et d‘en confier la gestion à une instance indépendante et supranationale, la Haute autorité. En avril 1951 le traité de Paris institue la CECA accepté par 6 pays: France, RFA, Italie, Pays-Bas, Belgique, Luxembourg : c’est le 1èr embryon d’une construction européenne. En 1957 suite à la signature du traité de Rome les 6 mêmes pays créent la CEE, communauté économique européenne. Depuis la CEE s’est étoffée et approfondie pour devenir l’Union européenne comprenons désormais 28 Etats. Le destin de la France est donc lié depuis 1951 à celui de ses voisins européens.
+            </p>
+
+            <img src="./histoire/europe.jpg" width="300" height="200" alt="Les pères de l'Europe avec leurs pays" />
+            <p><em>Les pères de l'Europe avec leurs pays</em></p>
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+
+
+    </div>
+
+
+    <div id="Fr_politique" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Politique et Economie </h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <ol data-role="listview">
+                <li><a href="#Fr_Pol">Politique</a></li>
+                <li><a href="#Fr_Economie">Economie</a></li>
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fra_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Fr_Pol" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Politique</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+
+            <p>
+                L’instauration de la République en France date de 1789 mais elle se caractérise par une certaine instabilité jusqu’à 1879. C’est lors de la 3ème République sous la gouvernance des ministères de Jules Ferry de 1879 à 1885 que la république marque les esprits. 
+Depuis 1958, le régime français est celui  de la 5ième République.  Le président est élu pour  5 ans depuis 2000, auparavant son mandat  était de  7 ans. La France est un des rares pays laïque en Europe et même dans le monde et ce depuis 1905 suite a la séparation de l’État et de l’Eglise. La France est donc laïque depuis 109 ans. 
+            </p>
+
+            <p>
+                En France le président est élu par tous les citoyens, voici un petit schéma récapitulatif :
+            </p>
+
+            <img src="./PolEcon/Image1.jpg" width="300" height="200" alt="Schéma droit de vote">
+            <p><em>Schéma droit de vote</em></p>
+            <p>
+                Les candidats font des  campagnes éléctorales pour se faire élire :
+            </p>
+
+            <img src="./PolEcon/Image2.jpg" width="600" height="400" alt="Dessin discours humoristique">
+            <p><em>Dessin discours humoristique</em></p>
+            <p>
+                Les politiques  peuvent envoyer des lettres à leurs électeurs :
+            </p>
+
+            <img src="./PolEcon/Image3.jpg" width="300" height="100" alt="Dessin humoristique naufragés">
+            <p><em>Dessin humoristique naufragés</em></p>
+            <p>
+                Le pouvoir est réparti entre plusieurs institutions :
+            </p>
+            <ul>
+                <li>le président et son gouvernement détiennent le pouvoir exécutif </li>
+                <li>le pouvoir législatif quand à lui est détenu par l’assemblée nationale  ainsi que par le sénat sous la 5ième République, ils peuvent voter la motion de censure qui permet de forcer le gouvernement à démissionner.</li>
+                <li>et enfin le pouvoir judiciaire est exercé par les magistrats et les juges.</li>
+            </ul>
+
+
+            <img src="./PolEcon/Image4.jpg" width="300" height="200" alt="Caricature Sénat">
+            <p><em>Caricature Sénat</em></p>
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Fr_politique" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="Fr_Economie" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Economie</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <img src="./PolEcon/Image5.jpg" width="300" height="200" alt="Caricature économie">
+            <p><em>Caricature économie</em></p>
+
+            <p>
+                La France est la 5ième puissance économique mondiale derrière les Etats-Unis, la Chine, le Japon, l'Allemagne et devant le Royaume-Uni. Le PIB (Produit intérieur brut : ensembles des richesses produites à l’intérieur d’un pays) est de 1931 milliards d’euros en 2012. 
+L’économie française peut se répartir en 3 secteurs :   
+            </p>
+            <ol>
+                <li>le secteur tertiaire occupe 71,8 % de la population active </li>
+                <li>le secteur primaire occupe  seulement 3.8% de la population active </li>
+                <li>le secteur secondaire occupe 24,3% de la population active.</li>
+            </ol>
+            <p>
+                L'économie française est donc principalement une économie de services 
+Voici un graphique circulaire des principaux secteurs d’activité en France :
+            </p>
+
+            <img src="./PolEcon/Image6.jpg" width="300" height="200" alt="Graphique répartition secteur économique">
+            <p><em>Graphique répartition secteur économique</em></p>
+            <p>
+                La France comme la plupart des pays riches est en crise. Ce phénomène est apparu au début des années 70 et a un impact sur la situation des finances publiques même si à l’époque le déficit  de l’Etat était minime. Avec la crise de 2008 le déficit s’est aggravé. Cela peut s’expliquer, entre autres,  par l’augmentation du chômage qui a pour effet de :
+- réduire les recettes de l’Etat (baisse des cotisations sociales) car il y a moins de personnes ayant un emploi  
+- augmenter les dépenses de l’Etat (hausse du nombre de bénéficiaires de l’indemnité chômage)
+
+Voici les dettes des pays de l’Europe dans l’ordre décroissant :
+            </p>
+
+            <img src="./PolEcon/Image7.jpg" width="300" height="200" alt="Graphique dette publique">
+            <p><em>Graphique dette publique</em></p>
+            <p>
+                Voici un petit graphique de l’évolution du déficit public français :
+            </p>
+
+            <img src="./PolEcon/Image8.jpg" width="300" height="200" alt="Courbe du déficit publique français">
+            <p><em>Courbe du déficit publique français</em></p>
+            <p>
+                La crise engendre également une hausse de la pauvreté qui menace la cohésion sociale
+
+La crise provoque divers problèmes :
+            </p>
+
+            <img src="./PolEcon/Image9.jpg" width="300" height="200" alt="Caricature problèmes français">
+            <p><em>Caricature problèmes français</em></p>
+            <p>
+                La France est un des pays fondateurs de l’Union Européenne qui est une zone économiquement développée. Le 1er janvier 1999, l'euro a officiellement remplacé le franc, ancienne monnaie nationale ; les billets et les pièces en euros sont introduits en 2002 et remplacent rapidement les précédents billets et pièces. 
+
+En France d’après un rapport de l’INSEE (institut national des statistiques et de l’étude économique) en 2013 le revenu disponible dans l’ensemble des ménages (tous les revenus des français additionné) était de 1326,3 milliards d’euros et 83,7% étaient dédié à la consommation.
+
+Ci-dessous voici un graphique sur la répartition de la part des différents postes dans la consommation:
+            </p>
+
+            <img src="./PolEcon/Image10.jpg" width="300" height="200" alt="Tableau de part de consommation dans une famille">
+            <p><em>Tableau de part de consommation dans une famille</em></p>
+            <p>
+                Ce tableau nous donne l’évolution de la consommation  entre 1960 et 2009. Nous pouvons  constater une diminution du coefficient budgétaire associé à l’alimentation et à l’habillement ce qui signifie que le budget moyen d’un ménage a augmenté. En effet, plus le revenu augmente  et plus le coefficient budgétaire associé à ces dépenses ne diminue car le budget qu’il leur est dédié n’augmente pas ou peu alors que le revenu augmente.                                                                                 
+En France l’intervention de l’Etat dans l’économie est importante. La France est l’un des pays où il y a le plus d’impôts. La croissance du PIB par habitant français a été plus faible que celle de certains autres pays développés, en particulier les États-Unis, au cours des deux dernières décennies. Il y a 280 000 millionnaires habitant en France en 2010, soit 0,45 % de la population.
+            </p>
+
+            <h3>Sources :</h3>
+
+
+            <img src="./PolEcon/Image11.jpg" width="300" height="200" alt="Source d'eau">
+            <p><em>Dessin humoristique naufragés</em></p>
+            <img src="./PolEcon/Image12.jpg" width="300" height="200" alt="Source d'eau">
+            <p><em>Source d'eau</em></p>
+            <br />
+
+            <h3>Wikipédia</h3>
+            <br />
+            <p>L’INSEE</p>
+            <br />
+            <br />
+            <a href="http://www.droitdevote.net">http://www.droitdevote.net</a>
+            <br />
+            <br />
+            <a href="http://www.reseauborreliose.fr/index.php/post/2011/12/14/Tiques,-%C3%A9thique-et-politique">http://www.reseauborreliose.fr/index.php/post/2011/12/14/Tiques,-%C3%A9thique-et-politique</a>
+            <br />
+            <br />
+            <a href="http://regardailleurs.fr/2010/03/14/pourquoi-je-nai-pas-vote/">http://regardailleurs.fr/2010/03/14/pourquoi-je-nai-pas-vote/</a>
+            <br />
+            <br />
+            <a href="http://directinfo.webmanagercenter.com/2012/07/28/tunisie-politique-elections-marzouki-fait-de-la-resistence-dans-les-sondages/">http://directinfo.webmanagercenter.com/2012/07/28/tunisie-politique-elections-marzouki-fait-de-la-resistence-dans-les-sondages/</a>
+            <br />
+            <br />
+            <a href="http://www.actualitix.com/graphiques-dettes-des-pays-ue.html">http://www.actualitix.com/graphiques-dettes-des-pays-ue.html</a>
+            <br />
+            <br />
+            <a href="http://www.gagdz.com/wp-content/uploads/2013/05/Caricature_gagdz_7a43c_8031.jpg">http://www.gagdz.com/wp-content/uploads/2013/05/Caricature_gagdz_7a43c_8031.jpg</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!--========================================================================HOLLAND===============================================================-->
+
+    <div id="Holl_intro" data-role="page">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>Holland</h1>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <br />
+            <ol data-role="listview">
+                <li><a href="#Ho_sport">Sport</a></li>
+              
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+
+
+ <div id="Ho_sport" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Sport</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+<p>The national sports of The Netherlands are cycling, skating, horse riding, soccer and Hockey.</p>
+<img src="./Holl_sport/sport1.jpg" alt="two hockey sticks and a ball" width="310">
+                <p><em>two hockey sticks and a ball</em></p>
+<p>The women team of The Netherlands is ranked first in the world ranking of hockey.</p>
+<img src="./Holl_sport/sport2.jpg" alt="3 skaters in orange" width="310">
+                <p><em>3 skaters in orange</em></p>
+<p>The skaters of The Netherlands won many medals during the winter olympics in Sochi.<br />
+Anky van Grunsven has won many medals with horse riding.</p>
+<p>The soccer team was in 2010 almost world champion, but they were beaten by Spain in the finals.</p>
+
+<iframe class="youtube-player"  width="300" height="200" src="http://www.youtube.com/embed/QLT2haLq61Q">
+</iframe>
+
+
+            <h2>Bauke Mollema</h2>
+<img src="./Holl_sport/bauke-mollema1.jpg" alt="Bauke Mollema on bike" width="310">
+             <p><em>Bauke Mollema on bike</em></p>
+<p>Bauke Mollema is a cyclist. He started in 2008. He is famous because he cycles in the tour de France. In 2013 he ended sixth.</p>
+<img src="./Holl_sport/bauke-mollema2.jpg" alt="Bauke Mollema and 3 other cyclists" width="310">
+             <p><em>Bauke Mollema and 3 other cyclists</em></p>
+<p>He is member of the team Belkin. Previously he was member of the teams Rabobank and Blanco.</p>
+            <iframe class="youtube-player"  width="300" height="200" src="http://www.youtube.com/embed/R59euuxBYGc">
+</iframe>
+
+
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Holl_intro" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
