@@ -12,6 +12,14 @@
     <script src="jquery-1.11.0.js"></script>
     <script src="jquery.mobile-1.4.2.js"></script>
 
+    <script type="application/javascript" src="iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new iScroll('wrapper', { zoom: true });
+        }
+        document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>
 
 
     <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
@@ -83,7 +91,7 @@
             <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
         </div>
     </div>
-<!--========================================================================FRANCE===============================================================-->
+    <!--========================================================================FRANCE===============================================================-->
     <div id="Fra_intro" data-role="page">
         <div data-role="header" style="background-color: #000000;">
             <h1>France</h1>
@@ -401,8 +409,9 @@ Depuis 1958, le régime français est celui  de la 5ième République.  Le prés
         </div>
         <div data-role="content" style="background-color: #000000;">
 
-
-            <img src="./PolEcon/Image5.jpg" width="300" height="200" alt="Caricature économie">
+            <div id="myScroll">
+                <img src="./PolEcon/Image5.jpg" width="300" height="200" alt="Caricature économie">
+            </div>
             <p><em>Caricature économie</em></p>
 
             <p>
@@ -493,18 +502,10 @@ En France l’intervention de l’Etat dans l’économie est importante. La Fra
 
 
 
-
-
-
-
-
-
-
-
-
-
         </div>
+
     </div>
+
     <!--========================================================================HOLLAND===============================================================-->
 
     <div id="Holl_intro" data-role="page">
@@ -516,7 +517,7 @@ En France l’intervention de l’Etat dans l’économie est importante. La Fra
             <br />
             <ol data-role="listview">
                 <li><a href="#Ho_sport">Sport</a></li>
-              
+
             </ol>
 
         </div>
@@ -528,36 +529,36 @@ En France l’intervention de l’Etat dans l’économie est importante. La Fra
 
 
 
- <div id="Ho_sport" data-role="page" style="background-color: #000000;">
+    <div id="Ho_sport" data-role="page" style="background-color: #000000;">
         <div data-role="header" style="background-color: #000000;">
             <h2>Sport</h2>
 
         </div>
         <div data-role="content" style="background-color: #000000;">
 
-<p>The national sports of The Netherlands are cycling, skating, horse riding, soccer and Hockey.</p>
-<img src="./Holl_sport/sport1.jpg" alt="two hockey sticks and a ball" width="310">
-                <p><em>two hockey sticks and a ball</em></p>
-<p>The women team of The Netherlands is ranked first in the world ranking of hockey.</p>
-<img src="./Holl_sport/sport2.jpg" alt="3 skaters in orange" width="310">
-                <p><em>3 skaters in orange</em></p>
-<p>The skaters of The Netherlands won many medals during the winter olympics in Sochi.<br />
-Anky van Grunsven has won many medals with horse riding.</p>
-<p>The soccer team was in 2010 almost world champion, but they were beaten by Spain in the finals.</p>
+            <p>The national sports of The Netherlands are cycling, skating, horse riding, soccer and Hockey.</p>
+            <img src="./Holl_sport/sport1.jpg" alt="two hockey sticks and a ball" width="310">
+            <p><em>two hockey sticks and a ball</em></p>
+            <p>The women team of The Netherlands is ranked first in the world ranking of hockey.</p>
+            <img src="./Holl_sport/sport2.jpg" alt="3 skaters in orange" width="310">
+            <p><em>3 skaters in orange</em></p>
+            <p>
+                The skaters of The Netherlands won many medals during the winter olympics in Sochi.<br />
+                Anky van Grunsven has won many medals with horse riding.
+            </p>
+            <p>The soccer team was in 2010 almost world champion, but they were beaten by Spain in the finals.</p>
 
-<iframe class="youtube-player"  width="300" height="200" src="http://www.youtube.com/embed/QLT2haLq61Q">
-</iframe>
+            <iframe class="youtube-player" width="300" height="200" src="http://www.youtube.com/embed/QLT2haLq61Q"></iframe>
 
 
             <h2>Bauke Mollema</h2>
-<img src="./Holl_sport/bauke-mollema1.jpg" alt="Bauke Mollema on bike" width="310">
-             <p><em>Bauke Mollema on bike</em></p>
-<p>Bauke Mollema is a cyclist. He started in 2008. He is famous because he cycles in the tour de France. In 2013 he ended sixth.</p>
-<img src="./Holl_sport/bauke-mollema2.jpg" alt="Bauke Mollema and 3 other cyclists" width="310">
-             <p><em>Bauke Mollema and 3 other cyclists</em></p>
-<p>He is member of the team Belkin. Previously he was member of the teams Rabobank and Blanco.</p>
-            <iframe class="youtube-player"  width="300" height="200" src="http://www.youtube.com/embed/R59euuxBYGc">
-</iframe>
+            <img src="./Holl_sport/bauke-mollema1.jpg" alt="Bauke Mollema on bike" width="310">
+            <p><em>Bauke Mollema on bike</em></p>
+            <p>Bauke Mollema is a cyclist. He started in 2008. He is famous because he cycles in the tour de France. In 2013 he ended sixth.</p>
+            <img src="./Holl_sport/bauke-mollema2.jpg" alt="Bauke Mollema and 3 other cyclists" width="310">
+            <p><em>Bauke Mollema and 3 other cyclists</em></p>
+            <p>He is member of the team Belkin. Previously he was member of the teams Rabobank and Blanco.</p>
+            <iframe class="youtube-player" width="300" height="200" src="http://www.youtube.com/embed/R59euuxBYGc"></iframe>
 
 
             <div data-role="footer" data-position="fixed" style="background-color: #000000;">
