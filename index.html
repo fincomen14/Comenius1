@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=true;" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no;" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <!-- maximum-scale=1.0 -->
     <title>PhoneGap WP7</title>
@@ -10,27 +10,23 @@
 
 
     <script src="jquery-1.11.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="iscroll.js"></script>
     <script src="jquery.mobile-1.4.2.js"></script>
-
-    <script type="application/javascript" src="iscroll.js"></script>
-    <script type="text/javascript">
-        var myScroll;
-        function loaded() {
-            myScroll = new iScroll('wrapper', { zoom: true });
-        }
-        document.addEventListener('DOMContentLoaded', loaded, false);
-    </script>
 
 
     <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
 
     <script type="text/javascript">
-
+        var myScroll;
         document.addEventListener("deviceready", onDeviceReady, false);
+        function scroll() {
+            myScroll = new IScroll('wrapper', { zoom: true });
+        }
+
 
         // once the device ready event fires, you can safely do your thing! -jm
         function onDeviceReady() {
-
+            scroll();
             console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
 
         }
@@ -409,7 +405,7 @@ Depuis 1958, le régime français est celui  de la 5ième République.  Le prés
         </div>
         <div data-role="content" style="background-color: #000000;">
 
-            <div id="myScroll">
+            <div id="wrapper">
                 <img src="./PolEcon/Image5.jpg" width="300" height="200" alt="Caricature économie">
             </div>
             <p><em>Caricature économie</em></p>
