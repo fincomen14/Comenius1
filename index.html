@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes;" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+   <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no;" />-->
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <!-- maximum-scale=1.0 -->
     <title>PhoneGap WP7</title>
     <link rel="stylesheet" href="jquery.mobile-1.4.2.css" />
@@ -13,25 +14,33 @@
 
     <script src="jquery.mobile-1.4.2.js"></script>
 
-        <script type="text/javascript" charset="utf-8" src="iscroll.js"></script>
-     <script type="text/javascript" charset="utf-8" src="iscroll-zoom.js"></script>
+    <script type="text/javascript" charset="utf-8" src="iscroll-zoom.js"></script>
 
     <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
 
     <script type="text/javascript">
+
         var myScroll;
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function scroll() {
-            myScroll = new IScroll('#wrapper', { zoom: true });
+
+        function loaded() {
+            myScroll = new IScroll('#wrapper', {
+                zoom: true,
+                scrollX: true,
+                scrollY: true,
+                mouseWheel: true,
+                wheelAction: 'zoom'
+            });
         }
+
+        document.addEventListener("deviceready", onDeviceReady, false);
 
 
         // once the device ready event fires, you can safely do your thing! -jm
-        function onDeviceReady() {
-            scroll();
-            console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+        //    function onDeviceReady() {
+        //       scroll();
+        //     console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
 
-        }
+        // }
 
     </script>
 
