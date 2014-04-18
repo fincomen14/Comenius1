@@ -10,9 +10,11 @@
 
 
     <script src="jquery-1.11.0.js"></script>
-    <script type="text/javascript" charset="utf-8" src="iscroll.js"></script>
+
     <script src="jquery.mobile-1.4.2.js"></script>
 
+        <script type="text/javascript" charset="utf-8" src="iscroll.js"></script>
+     <script type="text/javascript" charset="utf-8" src="iscroll-zoom.js"></script>
 
     <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
 
@@ -20,7 +22,7 @@
         var myScroll;
         document.addEventListener("deviceready", onDeviceReady, false);
         function scroll() {
-            myScroll = new IScroll('wrapper', { zoom: true });
+            myScroll = new IScroll('#wrapper', { zoom: true });
         }
 
 
