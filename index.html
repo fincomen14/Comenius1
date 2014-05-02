@@ -20,17 +20,12 @@
 
     <script type="text/javascript">
 
-        var myScroll;
+        var myScroll1;
+        var myScroll2;
 
         function loaded() {
-            myScroll1 = new IScroll('#wrapper', {
-                zoom: true,
-                scrollX: true,
-                scrollY: true,
-                mouseWheel: true,
-                wheelAction: 'zoom'
-            });
-         
+            myScroll1 = new IScroll('#wrapper1', {zoom: true,scrollX: true,scrollY: true,mouseWheel: true, wheelAction: 'zoom'});
+            myScroll2 = new IScroll('#wrapper2', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
         }
 
         document.addEventListener("deviceready", onDeviceReady, false);
@@ -418,9 +413,9 @@ Depuis 1958, le régime français est celui  de la 5ième République.  Le prés
 
         <div data-role="content" style="background-color: #000000;">
 
-            <div id="wrapper">
+            <div id="wrapper1">
                 <img src="./PolEcon/Image5.jpg" width="300" height="200" alt="Caricature économie">
-           
+           </div>
 
             <p><em>Caricature économie</em></p>
 
@@ -437,9 +432,9 @@ L’économie française peut se répartir en 3 secteurs :
                 L'économie française est donc principalement une économie de services 
 Voici un graphique circulaire des principaux secteurs d’activité en France :
             </p>
-           
+           <div id="wrapper2">
                 <img src="./PolEcon/Image6.jpg" width="300" height="200" alt="Graphique répartition secteur économique">
-            
+            </div>
             <p><em>Graphique répartition secteur économique</em></p>
             <p>
                 La France comme la plupart des pays riches est en crise. Ce phénomène est apparu au début des années 70 et a un impact sur la situation des finances publiques même si à l’époque le déficit  de l’Etat était minime. Avec la crise de 2008 le déficit s’est aggravé. Cela peut s’expliquer, entre autres,  par l’augmentation du chômage qui a pour effet de :
@@ -517,7 +512,7 @@ En France l’intervention de l’Etat dans l’économie est importante. La Fra
 
                  </div>
             </div>
-        </div>
+        
     
 
 
