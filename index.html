@@ -1,13 +1,1675 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-         <title>title</title>
-      </head>
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes" />
 
-   <script>
-super.setIntegerProperty("loadUrlTimeoutValue", 70000);
-     window.location='main.html';
-   </script>
-  <body>
-  </body>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <!-- maximum-scale=1.0 -->
+    <title>ComeniusApp</title>
+    <link rel="stylesheet" href="jquery.mobile-1.4.2.css" />
+    <link rel="stylesheet" href="master.css" />
+
+
+    <script src="jquery-1.11.0.js"></script>
+
+    <script src="jquery.mobile-1.4.2.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="iscroll-zoom.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+
+    <script type="text/javascript">
+
+        var myScroll1;
+        var myScroll2;
+        var myScroll3;
+        var myScroll4;
+        var myScroll5;
+        var myScroll6;
+        var myScroll7;
+        var myScroll8;
+        function loaded() {
+            myScroll1 = new IScroll('#wrapper1', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll2 = new IScroll('#wrapper2', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll3 = new IScroll('#wrapper3', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll4 = new IScroll('#wrapper4', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll5 = new IScroll('#wrapper5', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll6 = new IScroll('#wrapper6', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll7 = new IScroll('#wrapper7', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+            myScroll8 = new IScroll('#wrapper8', { zoom: true, scrollX: true, scrollY: true, mouseWheel: true, wheelAction: 'zoom' });
+
+        }
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+
+        // once the device ready event fires, you can safely do your thing! -jm
+        //    function onDeviceReady() {
+        //       scroll();
+        //     console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+
+        // }
+
+    </script>
+
+</head>
+<body onload="loaded()">
+
+    <div id="intro_page" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>EUROMOVE</h1>
+        </div>
+        <div data-role="content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Welcome to EUROMOVE!</h1>
+            <br>
+            <br>
+            <h2>This is our application developed by the Comenius Project Team involving France, Ireland, and Holland.</h2>
+
+            <br>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-r">Enter Application</a>
+        </div>
+    </div>
+
+    <div id="menu" data-role="page">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>Menu</h1>
+            <a href="#intro_page" data-icon="delete">Back</a>
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>Choose a country to learn about:</p>
+            <br />
+            <ul data-role="listview">
+                <li><a href="#Ire_intro">Ireland</a></li>
+                <li><a href="#Fra_intro">France</a></li>
+                <li><a href="#Holl_intro">Holland</a></li>
+            </ul>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#intro_page" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+    <div id="Ire_intro" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>Ireland</h1>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <ul data-role="listview">
+                <li><a href="#Buses">Buses in Ireland</a></li>
+                <li><a href="#Xmas">Christmas Traditions</a></li>
+                <li><a href="#Halloween">Entertainment on Halloween</a></li>
+                <li><a href="#IrFunerals">Irish funerals</a></li>
+                <li><a href="#FamousIrish">Famous Irish People</a></li>
+                <li><a href="#WorkHrs">Ireland's working hours</a></li>
+                <li><a href="#Constitution">Irish Constitution</a></li>
+
+                <li><a href="#IrHistory">Irish History</a></li>
+                <li><a href="#IrLit">Irish Literature</a></li>
+                <li><a href="#IrPoetry">Irish Poetry</a></li>
+                <li><a href="#IrSchools">Irish schools</a></li>
+                <li><a href="#IrLaw">Law in Ireland</a></li>
+                <li><a href="#mountainsinIreland">Mountains in Ireland</a></li>
+                <li><a href="#IrShops">Shops</a></li>
+                <li><a href="#IrFood">Traditional Irish food</a></li>
+                <li><a href="#DubTransport">Transport in Dublin</a></li>
+                <li><a href="#IrWeather">Weather in Ireland</a></li>
+                <li><a href="#IrWeddings">Weddings in Ireland</a></li>
+                <li><a href="#WhatsHot">What's hot</a></li>
+            </ul>
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+    <div id="Buses" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Buses in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h3>Some facts about bus services in Ireland:</h3>
+
+            <ul>
+                <li>Dublin bus, Bus Eireann and the Airport Bus (The Green Bus) are the most popular bus services that operate in Ireland.</li>
+                <li>There is a fee for all passengers except for those 6 or over.</li>
+                <li>Guide dogs are allowed to travel for free but no other animals are allowed.</li>
+                <li>It is illegal to smoke onboard</li>
+                <li>Passengers are allowed to carry 1 item of hand luggage free of charge.</li>
+                <li>To carry a bicycle on the bus for a single journey, it costs e11.</li>
+                <li>Ireland's first bus services began in 1971.</li>
+                <li>Bus Eireann has the most services in the Republic of Ireland outside of Dublin.</li>
+                <li>Irish citizens depend on buses for school trips, school tours and to get around their local area around Ireland.</li>
+            </ul>
+
+            <h3>Bus services for young people in Ireland:</h3>
+
+            <ul>
+                <li>Bus Eireann and Dublin Bus facilitate college students with several routes to colleges every day.</li>
+                <li>City and town routes serve colleges in general areas.</li>
+                <li>Secondary School students can get schoolchild and scholar photo cards, which allows them to get certain Dublin Bus Student tickets.</li>
+                <li>Buses facilitate the needs and wants of young people. Most bus services in Ireland have free wifi-zones, DVD and radio players, tinted windows, arm rests, televisions, and curtains on the windows.</li>
+                <li>The green bus has even more advanced facilities including climate control, leather seats and increased seat spacing for superior comfort.</li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="Xmas" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Christmas in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Christmas traditions in Ireland</h1>
+            <h3>A light in the window </h3>
+            <p>One old custon that many continue to observe is the placing of a candle in the window on Christmas Eve, a symbol to welcome strangers and to rememberthose who are far away from home. Light shining through the windows on Christmas Eve gives a warm and welcoming feeling when walking through a town on Christmas Eve. </p>
+
+            <h3>Midnight Mass on Christmas Eve</h3>
+            <p>If a church packed to the rafters is something youre looking for, look no further than any church in Ireland at midnight mass on Christmas Eve. This is a huge social gathering where family, friends and neighbours who you have not seen all year come together to celebrate Christmas. </p>
+            <p>With Christmas carols being sung annd often, live music being played, midnight mass in Ireland is a great place to catch up with old friends and get in touch with the local community. </p>
+
+            <h3>Horce racing on St. Stephen's Day</h3>
+            <p>St. Stephen is the patron saint of horses but I am almost positive that this is not the reason that horse racing on St. Stephen's Day has become a traditon in Ireland. The races in Leopardstown, South Dublin, attract almost 20,000 people every year, but I dont' think it has anything ot do with the old Germanic tradition of racing horses on St. Stephen's Day to honour the saint.</p>
+            <p>In Ireland heading off to the races is a chance to get out of the house, stretch your legs, look at the horses and have a drink with friends. </p>
+
+            <h3>Christmas Day Swim, Forty Foot, South Dublin</h3>
+
+            <p>Christmas day swims take place all over Ireland on Christmas morning, but most famously at the forty foot rock, just south of Dublin. On Christmas Day hundreds of peoplecan be seen jumping into the Irish Sea wearing only bathing suits. </p>
+            <p>The water in the Irish Seaon Christmas Day is usually around 10C (50F). Unfortunately, the temprature outside the water is usually about half of this, making the experience bracing to say the least. This is certainly not for the faint hearted but is a proven hangover cure, and participants often receive sponsorship for charities. </p>
+
+            <h3>Decorations/ Holly Wreathes</h3>
+            <p>Christmas decoration in Ireland traditionally was just a wreath of holly on the front of the door of the house. However, National Lampoon's, "Christmas Vacation" seems to be have been a blueprint for many Irish households as they are now lit up like Rockefeller Center.</p>
+            <p>Also traditionally, decorations would go up on December 8 the Feast of the Immaculate Conception and also come down on Little Christmas, January 6th.</p>
+
+            <h3>A Christmas Whitewashing</h3>
+            <p>Around Christmas, you'll still find the odd farm building in the Irish coutryside that looks like it's just been whitewashed. Long ago, farm families cleaned and then whitewashed every farm building in December. They were all covered in white paint or limewash, to symbolically purify them for the coming of the saviour. The tradition traces back thousands of years, not just through Celtic culture but through other central European cultures.</p>
+
+        </div>
+
+
+
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="Halloween" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Halloween</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1><b><u>Halloween Entertainment</u></b></h1>
+
+            <p><b>Games:</b> There are some traditional Irish games that were played on Halloween using apples. Some of them are still played today.</p>
+
+            <p><b>Bobbing apples:</b> Apples are floating in a large basin of water. Everyone has a go trying to take a bite of the apple, and the first person to take a bite of the apple without touching it with their hands is the winner</p>
+
+            <p><b>Bite the apple</b> A piece of string is tied around the stem of an apple. The aples are hanging freely from the ceiling or something high. Without touching it with their hands everyone tries to take a bite out of the apple. The first one to do so wins. </p>
+
+            <p><b>peeling the apple:</b> Everyone tries to peel an apple all in one go. If you succeed you throw the apple over your left shoulderand its supposed to spell the initial of the person you will marry.  </p>
+
+            <h3><b>Bonfires</b></h3>
+
+            <p><b>Originally...</b> Bonfires were used to ward off bad luck or evil spirits. The whole community gathered on Halloween night around the bonfire. The next day everyone cleared out their fires at home and sprinkled ashes from their own fire and the bonfire in their fields as a form of protection and good crops for the next year. </p>
+
+            <p><b>Today...</b> Bonfires have no important meaning for most people and are just used for fun. However, they are dangerous if they out of control. Lots of waste material or old furniture is burnt in bonfires now </p>
+
+
+            <p><b>Fireworks:</b> Fireworks are commonly used in Ireland to celebrate Halloween. People gather together near where they live to watch fireworks usually but some travel to see firework displays. Black cats are a type of firework and are popular with young people in Ireland. They make a loud bang and light up but they don't shoot up in the air and they are not colourful. </p>
+
+            <h3><b>Trick or treating in Ireland</b></h3>
+
+            <p><b>Years ago...</b> Poor people used to go to richer people's houses on Halloween and were given food if the poor person would agree to say prayers for the homeowner's dead relatives or friends.</p>
+
+            <p><b>Today...</b> Children dress up in costumes and go from house to house telling jokes and singing songs in return for sweets, nuts, fruit and small change.</p>
+
+            <h3><b>Irish supserstitions about Halloween</b></h3>
+            <p>Here are a few of the weird superstitions the Irish had about Halloween many years ago. Many of them are not believed anymore but some people do still believe in them.</p>
+
+            <ul>
+                <li>Dead spirits come back alive and walk the Earth on Halloween night.</li>
+                <li>Food should be offered to the dead because they need nourishment and when the food disappears the spirits have eaten it</li>
+                <li>If you eat any crops pulled from the ground after Halloween you will die because they have been poisoned be the dead.</li>
+                <li>Never look back upon hearing footsteps on Halloween because if spirits are seen their looks can kill you.</li>
+                <li>Dead things disguise themselves as different things such as animals on Halloween. That is why it is considered bad luck if you see a black cat.</li>
+                <li>It is now believed to be good luck if a black cat comes to the same side of the road as you.</li>
+                <li>Birds such as ravens and crows are signs of bad luck.</li>
+                <li>If you leave ivy leaf in a glass of water over Halloween and it has no spots in the morning that person will have a year of good health.</li>
+            </ul>
+
+
+            <h3><b>Two facts about Halloween</b></h3>
+            <ol>
+                <li>Halloween is sometimes referred to as All-Hallows Eve. It originated from a pagan festival honouring the dead.</li>
+                <li>Halloween in Ireland is the busiest time for fire and ambulance crews. On Halloween 2012 there were 790 calls out to Leinster alone between 6pm and the following morning. Around 1500 calls were made that night.</li>
+            </ol>
+
+
+
+        </div>
+
+
+
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="FamousIrish" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Famous Irish People</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Famous Irish People</h1>
+
+            <p>
+                Pierce Brosnan: (born 16 May 1953) is an Irish actor, film producer and environmentalist. He was in James Bond, Mama Mia and I Don't Know How She Does It.
+            </p>
+
+            <img src="./IrishPics/Pierce-Brosnan-Wallpaper-17.jpg" width="300" height="200">
+
+            <p>
+                Colin Farrell: (born 31 May 1976) is an Irish film actor. He was in Epic (Ronin), The Seven Psycopaths and Saving Mr. Banks.
+            </p>
+
+            <img src="./IrishPics/colin_farrell.jpg" width="300" height="200">
+
+            <p>
+                Richard Harris:  (1 October 1930 – 25 October 2002) was an Irish actor, singer, theatrical producer, film director and writer. He was the first Dumbledore in Harry Potter and was in Gladiator.
+            </p>
+
+            <img src="./IrishPics/HarryPottersAlbusDumbledore.jpg" width="300" height="200">
+
+            <p>
+                Saoirse Ronan: (born 12 April 1994) is an Irish actress. She was in The Host, Muppets Most Wanted and Justin and The Knights of Valour.
+            </p>
+
+            <img src="./IrishPics/Irish-actress-Saoirse-Ronan.jpg" width="300" height="200">
+
+            <p>
+                Chris O'Dowd: (born 9 October 1979) is an Irish actor and comedian. He is in Epic (Grub), Thor: The Dark World and Bridesmaids.
+            </p>
+
+            <img src="./IrishPics/chris-o-dowd-empire-film-awards-2012-arrivals-03.jpg" width="300" height="200">
+
+            <p>
+                Liam Neeson: (born 7 June 1952) is an Irish actor who rose to prominence with his acclaimed starring role in Steven Spielberg's 1993 Oscar winner Schindler's List. He was also in Taken and Les Miserables (1998).
+            </p>
+
+            <img src="./IrishPics/Liam_Neeson.jpg" width="300" height="200">
+
+            <p>
+                Graham Nortan: (born 4 April 1963), is an Irish comic presenter. He is the host of the oh so famous comedy chat show The Graham Norton Show.
+            </p>
+
+            <img src="./IrishPics/graham-norton.jpg" width="300" height="200">
+
+            <p>
+                Nadine Coyle: (born 15 June 1985) is an Irish singer, songwriter, actress, and model from Derry, Northern Ireland. She is known from being in the Saturdays and has starred in St Trinians.
+            </p>
+
+            <img src="./IrishPics/nadine-coyle-44272.jpg" width="300" height="200">
+
+            <p>
+                Westlife: were an Irish boy band, formed in July 1998 and disbanded in June 2012. Originally signed by Simon Cowell and managed by Louis Walsh, the group's final line-up consisted of Nicky Byrne, Kian Egan, Mark Feehily and Shane Filan. Brian McFadden was a member from 1998 until his departure in 2004. They sang You Raise Me Up and Uptown Girl.
+            </p>
+
+            <img src="./IrishPics/hqdefault.jpg" width="300" height="200">
+
+            <p>
+                Paul (Bono) David Hewson: (born 10 May 1960) is an Irish singer-songwriter, musician, venture capitalist, businessman, and philanthropist. He and his band called "U2" had sang "Beautiful Day" and "Ordinary Love".
+            </p>
+
+            <img src="./IrishPics/bono-vxo.jpg" width="300" height="200">
+
+            <p>
+                Niall Horan: (born September 13, 1993) is a member of One Direction along with Harry Styles, Liam Payne, Louis Tomlinson, and Zayn Malik. The band have sang 'What Makes You Beautiful', 'Live While We're Young' and 'Midnight Memories'.
+            </p>
+
+            <img src="./IrishPics/Niall-Horan-main.jpg" width="300" height="200">
+
+            <p>
+                Una Healy: (born 10 October 1981) is an Irish singer-songwriter and musician, also best known for being a member of girl group The Saturdays too. 
+            </p>
+
+            <img src="./IrishPics/Una-Healy.jpg" width="300" height="200">
+
+            <p>
+                John and Edward Grimes: (born 16 October 1991), known professionally as Jedward, are an Irish singing and television presenting duo. They sang 'Lipstick' and 'Young Love'.
+            </p>
+
+            <img src="./IrishPics/Jedward-1024x676.jpg" width="300" height="200">
+
+            <p>
+                Bob Geldof: (born 5 October 1951) is an Irish singer-songwriter, author, occasional actor and political activist. He and his band, which he left, Boomtown Rats sang "Lookin' After No. 1" and "Mary of the 4th Form".
+            </p>
+
+            <img src="http://d.ibtimes.co.uk/en/full/231346/singer-political-activist-geldof-attends-news-conference-situation-horn-africa-u-n.jpg?w=660&h=431&l=45&t=48" width="300" height="200">
+
+            <p>
+                Ronan Keating: (born 3 March 1977) is an Irish recording artist, singer-songwriter, musician, and philanthropist. Him and his band Boyzone had sang 'No Matter What' and 'Everyday I Love You'.
+            </p>
+
+            <img src="./IrishPics/ronan-keating-wallpape_opt.jpg" width="300" height="200">
+
+            <p>
+                Ryan Dolan:  (born 22 July 1985) is a pop singer from Strabane in County Tyrone, Northern Ireland. He performed in the Eurovision singing 'Only Love Survives'.
+            </p>
+
+            <img src="./IrishPics/ryandolanesc.jpg" width="300" height="200">
+
+            <p>
+                Siva Kaneswaran: (Born on 16 November 1988) is a pop singer from the Wanted. They have sang 'Chasing the Sun' and 'All Time Low'
+            </p>
+
+            <img src="./IrishPics/LDS64GEO.jpg" width="300" height="200">
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="WorkHrs" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Working Hours in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Ireland's working hours</h1>
+            <p>The Organisation of Working Time Act 1997 states that the maximum average working week for many employees cannot exceed 48 hours. This does not mean that a working week can never exceed 48 hours, it is the average that is important. The average Irish working week is 39 hours. The standard irish office day is from 9am until 5.30pm with an hour for lunch, taken between 12 and 2pm. Many officesincluding government departments, are closed between 12.30 and 2pm.</p>
+
+            <p>The average may be calculated in one of the following ways: </p>
+            <ul>
+                <li>Over four months for most employees.</li>
+                <li>Over six months for employees working in the security industry, hospitals, prisons, gas/electricity, airports/docks, agriculture and employees in business which have peak periods at certain times of the year such as tourism.</li>
+                <li>Over 12 months where there has been an agreement between the employer and the employees to this effect. The agreement between the employer and the employee must be approved by the Labour Court.</li>
+            </ul>
+
+            <p>The calculation of 48 hours does not include annual leave, sick leave and maternity/adoptive/parental leave.</p>
+            <p>The provisions of the Organisation of Working Time Act 1997 on working time and rest periods do not apply to all employees. They do not apply to the Gardaí, Defence Forces, employees who control their own working hours or family employees on farms or in private homes.</p>
+            <p>If you do Sunday work your entitlement to extra pay may be agreed between you and the employer. Under the Organisation of Working Time Act, if there is no agreement about your pay, your employer must give you one or more of the following for Sunday working: </p>
+            <ul>
+                <li>A reasonable allowance</li>
+                <li>A reasonable pay increase</li>
+                <li>Reasonable paid time off work</li>
+            </ul>
+            <h2><strong>Breaks</strong></h2>
+            <p>The general rule on breaks is that you are entitles to a break of 15 minutes aftert a four and a half hour work period. If you work more than 6 hours you are entitled to a break of 30 minutes, which can include the first 15 minute break. There is no entitlement to be paid during these breaks and they are not considered part of working time. Shop employees who work more than 6 hours and whose hours of work include 11.30am-2.30pm are entitled to a one hour consecutive break which must occur during those hours.</p>
+
+            <h2><strong>Children and Young People</strong></h2>
+            <p>The working hours for young people are regulated by the Protection of Young Persons </p>
+
+            <h5><strong>Maximum weekly working hours for children under 16</strong></h5>
+
+            <table border="1">
+                <tr>
+                    <th>Age</th>
+                    <th>14 years old</th>
+                    <th>15 years old</th>
+                </tr>
+                <tr>
+                    <td>school term time</td>
+                    <td>nil</td>
+                    <td>8 hours</td>
+                </tr>
+                <tr>
+                    <td>holidays</td>
+                    <td>35 hours</td>
+                    <td>35 hours</td>
+                </tr>
+                <tr>
+                    <td>work experience</td>
+                    <td>40 hours</td>
+                    <td>40 hours</td>
+                </tr>
+
+            </table>
+
+
+
+            <h4><strong>Time off and rest breaks for children under 16</strong></h4>
+
+            <table border="1">
+                <tr>
+                    <td><strong>half hour rest break</strong></td>
+                    <td>after 4 hours of work</td>
+
+                </tr>
+                <tr>
+                    <td><strong>Daily rest break</strong></td>
+                    <td>14 consecutive hours off</td>
+
+                </tr>
+                <tr>
+                    <td><strong>Weekly rest break</strong></td>
+                    <td>2 days off, to be consecutive</td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>as far as possible</td>
+                </tr>
+            </table>
+
+
+
+            <h4><strong>Working hours, time off and rest breaks for ages 16-17</strong></h4>
+
+            <table border="1">
+                <tr>
+                    <td><strong>Maximum working day</strong></td>
+                    <td>8 hours</td>
+
+                </tr>
+                <tr>
+                    <td><strong>Maximum working week</strong></td>
+                    <td>40 hours</td>
+
+                </tr>
+                <tr>
+                    <td><strong>Half hour rest break</strong></td>
+                    <td>after 4 1/2 hours work</td>
+
+                </tr>
+                <tr>
+                    <td><strong>Daily rest break</strong></td>
+                    <td>12 consecutive hours off</td>
+                </tr>
+                <tr>
+                    <td><strong>Weekly rest break</strong></td>
+                    <td>2 days off consecutive</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>as far as practible</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Constitution" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>The Irish Constitution in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>The Irish Constitution</h1>
+            <p>
+                The Constitution of Ireland (Bunreacht na hEireann) is the fundamental law of Ireland. It came into force on 29 December 1937 following national plebiscite held on 1 July 1937.
+            </p>
+
+            <h1>The President of Ireland</h1>
+            <p>The current President of Ireland (Uachtaran na hEireann) is Michael D. Higggins. He took office on the 11 November 2011. Aras an Uachtarain in Dublin, Ireland is the offical residence of the President of Ireland.</p>
+            <img src="./IrishPics/ARAS.jpg" width="300" height="200" >
+            <p>The President plays a mainly ceremonial role in the running of the State. The Taoiseach of Ireland is the Prime Minister. The current Taoiseach is Enda Kenny. The Taoisech answers the questions in the Dail where broad policy is concerned, or where issues specific to his department are concerned. The Taoiseach may also sponsor legislation which represents important new developments.</p>
+
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+    <div id="IrEconomy" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>The Irish Economy</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>The Irish Economy</h1>
+
+            <p>
+                The economy of Ireland is a modern knowledge economy. The Irish economy is a small and highly open. The value of internationally traded goods and services in 2012 was equivalent to 191% of GDP, which amounted to Euro 164 billion for the year. Services are the largest component of Irish output: in 2012 they accounted for 67% of gross value added at the factor cost, while industry and agriculture represented 31% and 2% of gross value added.
+            </p>
+
+            <img src="./IrishPics/hhri7gwaydgl25aor1x8xpz99ddbg3k.jpg" width="300" height="200">
+
+            <p>
+                Pharmaceutical products, computer and electronic products, and food accounted for 34.5%, 17.2% and 16.5% of total gross industrial output in 2009. The Financial Crisis of 2008 affected the Irish economy severely, compounding domestic economic problems related to the collapse of the Irish property bubble
+            </p>
+
+            <img src="./IrishPics/250px-Finance-dowjones-chart1.jpg" width="300" height="200">
+
+            <p>
+                Until 2007 the levels of Irish public debt were low and declining. Ireland's national debt fell from 34% of GDP in 2000 to 25% of GDP in 2007. As a consequence of the very deep recession which began in 2008, combined with significant levels of public money injected into the Irish banking system in 2009, 2010 and 2011, the level of public debt soared. National debt, increased from 20% of GDP in 2007 to 84% of GDP in 2012, and the general government debt increased from 25% of GDP in 2007 to 117% of GDP in 2012
+            </p>
+
+            <img src="./IrishPics/nq29dcs50pcnc3wyf2e452i5l9e613b.jpg" width="300" height="200">
+
+            <p>
+                As a small, trade-dependent economy, Ireland's ability to recover from the crisis depends highly on the future of it's trading partners and their ability to recover from the Great Recession and the European debt crisis. It was the first country in the EU to officially enter a recession related to the Financial crisis 2008. In November 2010 the Irish Government published the National Recovery plan, which aimed to restore order to the public finances and to bring it's deficit in line with the EU target of 3% of economic output by 2015
+            </p>
+
+
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="IrFunerals" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Funerals in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>Traditions of an Irish funeral</h1>
+            <p>If there is any tradition in Ireland that is common among Irish people it would be that of the burial of a loved one. After the death a window is opened to allow the spirit of the deceased to leave the house, no-one must stand or block the path to the windows this may prevent the spirit from leaving the houseand will bring bad luck to the person who blocks the route. After two hours the window should be closed as this will prevent the spirit from re-entering.</p>
+            <p>The body is washed and dressed; in times gone by they would've been clothed in white.</p>
+            <p>A wake can last for a few days to allow people to come from far away to pay their respects and to say goodbye. On the day of the funeral the coffin is carried by six males, usually family or close friends. Cremations do take place in Ireland but are not as common as traditional burial ceremonies.</p>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="IrHistory" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Irish History</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>Irish History</h1>
+            <p>When you hear the name "Ireland" you automatically think of leprechauns and pots of gold, but Ireland is so much more; it's a beautiful island with a lot of green areas, historical remains and landmarks.</p>
+
+
+            <h3>The Relationship with Great Britain</h3>
+            <p>Britain invaded in 1649 this demand was made by Oliver Cromwell, but Cromwell didn't manage to conquer all of Ireland but managed to take eastern and southern Ireland. The Cromwellian conquest lasted until 1653.</p>
+
+            <h3>Bonze Age and Iron Age</h3>
+            <p>Bronze age started to arive in Ireland around 2000BC, this was when moulding axes and copper mines were used in Ross island, Co. Kerry and Mount Gabriel, Co. Cork. During the Iron Age, Celtic began to influence the Irish in different arts. They also influenced out culture and language.</p>
+
+            <h3>Freedom</h3>
+            <p>Throughout history, Ireland has been regarded as a single national unit. Prior to Norman invasion from Britain in 1169, the Irish people were distinct from other nations because Ireland had its own law, culture, language, and political and social structures. There were many different groups in Ireland at this time. </p>
+
+            <p><b>Unionists:</b>The Unionists veto Irish independance, grafted by the British government onto its deliberate fracture of Irish nationalist unity, has become the cornerstoneof the British govenrments public rationale for its continuingexercise of sovereignty over the six counties.</p>
+
+            <p><b>Civil Rights:</b>Organised discontent with the apartheid system began to emerge in the late 1960's and led to the formation of the northern Ireland civil rights association. Its moderate demands were aimed at trying to reform and democratize the state. The issue of partition was not part of the agenda. Unionists, however, interpreted any form of political dissent, however moderate, as a threat to their privelaged position and the union with Britain.</p>
+
+            <p><b>Loyalists:</b>The major stumbling block to independance is British colonial interference. However, it suits the British and the loyalists for the loyalists to be portrayed as the real obstacle that independance and allows the British Parliament off the hook, projecting itself as the "honest broker".</p>
+
+            <p><b>Hunger Strikes:</b> Because of British rule in Ireland, Irish prisoners were selected for specialtreatment inside British prisons. The struggle for decent conditions, dignity, and recognition as political prisoners has been constant and still continues today. Of all the prison rights campaigns the most publicized because of the number involved was the "blanket protest" hunger strikes of 1980-1981.</p>
+            <p>In the year 1975, republican prisoners refused to wear prison uniforms and wrapped themselves in blankets. Within a short period, prisoners were forced to live in their cells surrounded by their own excrement. Beatings and degredation were used, in an attempt to break the prisoners will. For four years the prisoners perservered in the most awful conditions. The second hunger strike was was initiated on March 1st 1981. It lasted 217 days ending on the 3rd of October. This was by far the worst hunger strike. This involved ten young Irishmen; Bobby Sands, Francis Hughes, Ray McCreesh, Patsy O'Hara, Joe Doherty, Tom McElwee and Mickey Devine, who all gave their lives for the Ireland they believed could happen.</p>
+
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="IrLit" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Irish Lierature</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>Irish literature</h1>
+            <p>For an island so small, Ireland has made a significant impact on the world of words. As the land of saints and scholars, it's no surprise we boast exellent playwrights, poets and writers.</p>
+
+            <h3>Novelists</h3>
+            <p>Dracula is among the best selling books of all time. It has influenced over 1,000 vampire-based films throughout the world and has deep Irish roots. For instance, the name Dracula stems from "Droch Ola", a gaelic phrase meaning bad blood.</p>
+            <p>Bram Stoker, author of Dracula, was born in Dublin and spent his early life there. He graduated from Trinity college.James Joyce is an exellent exaple of an Irish author also. His books "Ulysses" and "Finnegan's Wake" are widely critically proclaimed and disputed. They are written in stream of consciusness style writing and are so abstract there are debates if Finnegan's wake has a plot at all.</p>
+            <p>Edna O'Brien is a female Irish novelist. Her first novel, The Country Girls, is often credited with breaking silence on sexual matters and social issues during a repressive period in Ireland following World War II. The book was banned, burned and denounced from the pulpit, and O'Brien left Ireland behind.</p>
+
+            <h3>Playwrights</h3>
+            <p>Probably the best known Irish playwright is the flamboyant and highly quotable Oscar Wilde. His most famous work is The Importance of Being Earnest: A Trivial Comedy for Serious People was first performed on 14 February 1895 at the St. James' Theatre in London. The play is still performed today and continues to delight audiences globally. For a witty, satirical experience, Oscar Wilde is certainly the one to turn to.</p>
+            <p>For someone with a darker taste, Samuel Beckett plays beautifully sorrowful with bleak, harsh insights into life and human nature coupled with gallows humour, Waiting for Godet is considered to be a cornerstone or twentieth-century theatre.</p>
+
+            <h3>Poets</h3>
+            <p>William Butler Yeats was an Irish poet and one of the foremost figures of the 20th century literature. Yeats had a very interesting history with achievement like the Nobel Prize for Literature, being the driving force behind the Irish Literary Revival and founder of the Abbey Theatre. He served as an Irish Senator for two terms. The lake isle of Inisfree and the stolen child are two of its best known poems.</p>
+            <p>Seamus Heaney's poems are very well known are very known in Ireland as he only dies in 2013. He was described as the best-known poet in the world as well as the greatest poet of our age. This work includes poems such as a constable calls and the skunk.</p>
+
+            <p>A list of Nobel Literature prize winners from Ireland are:</p>
+
+            <ol>
+                <li>Seamus Heaney, Literature, 1995</li>
+                <li>Samuel Beckett, Literature, 1969</li>
+                <li>George Bernard Shaw. Literature, 1925</li>
+                <li>William Butler Yeats, Literature, 1923</li>
+            </ol>
+
+
+
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="IrPoetry" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Irish Poetry</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Irish Poetry</h1>
+
+            <p>
+                Seamus Heaney was born in Derry, Northern Ireland on the 13th of April 1939. His first published work in 1966 was called 'Death of a Naturalist' and it won a Nobel Prize in literature in 1995 for his globally acclaimed oevre. He died on the 30th of August 2013
+            </p>
+
+            <p>
+                Below is a link to the poem'Death of a Naturalist'
+            </p>
+
+            <a href="http://www.poemhunter.com/poem/death-of-a-naturalist/"></a>
+
+            <p>
+                Oscar Wilde was born in Dublin on the 6th of October 1854. His first poetry book was simply named 'Poems'. He was imprisoned for being a gay man and died in Paris, France on the 30th of November 1900
+            </p>
+
+            <p>
+                Below is a link to one of his poems named 'My Voice'
+            </p>
+
+            <a href="http://www.poemhunter.com/poem/my-voice/"></a>
+
+            <p>
+                James Joyce was born in Dublin on the 2nd of February 1882 and could speak 17 different languages quite fluently. His first book of poems was called 'Chamber Music' which people said referred to the sound of unine in a chamber pot. It was published in 1907 by Elkin Matthews. Joyce died in Zurich, Switzerland on the 13th of January 1941.
+            </p>
+
+            <p>
+                Below is a link to all of the 'Chamber Music'
+            </p>
+
+            <a href="http://www.theotherpages.org/poems/joyce01.html"></a>
+
+            <p>
+                Eavan Boland was born in Dublin on the 24th of September 1944. She was a feminist through and through and her first poetry book called '23 Poems' was published in 1962. She still lives today and divides her time between Pala Alto and her home in Dublin.
+            </p>
+
+            <p>
+                Below is a link to her poem 'Anorexic'
+            </p>
+
+            <a href="http://famouspoetsandpoems.com/poets/eavan_boland/poems/1195"></a>
+
+            <p>
+                Finally W.B Yeats, the famous of all, was born in Dublin on the 16th of June 1865. In December 1923, Yeats was awarded the Nobel Prize in Literature. His most famous works and is used for exams today is 'He wishes for the Clothes of Heaven'. He died in Menton, France on the 28th of January 1939.
+            </p>
+
+            <p>
+                Below is a link to 'He wishes for the Clothes of Heaven'.
+            </p>
+
+            <a href="http://www.online-literature.com/yeats/776/"></a>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="IrSchools" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Irish Schools</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Irish Schooling System</h1>
+
+            <p>
+                All children must receive compulsory education between the ages of five and sixteen years, and all children up to the age of eighteen must complete the three years of post-primary. The Constitution of Ireland allows this education to be provided in the home; this has caused much legal wrangling for years as to the minimum standards required for home education since the constitution does not explicitly provide for the State to define these minimum standards.
+            </p>
+
+            <h2>Pre-School Years</h2>
+
+            <p>
+                Pre-school is optional, in Ireland and takes the form of a number of privately run crèches, play-schools and Montessori schools, which children attend for one year or two, at ages three and/or four. Parents must pay to send their child to these institutions. From 2009 onwards children are entitled to a year of free pre-schooling in the year prior to starting primary schools under the "Early Childcare and Education Scheme".
+            </p>
+
+            <h3>Primary Years</h3>
+
+            <p>
+                The Primary School Curriculum consists of 8 years. They include Junior Infants (age 4-5/5-6), Senior Infants (age 5-6/6-7), First Class (age 6-7/7-8), Second Class (age 7-8/8-9), Third Class (age 8-9/9-10), Fourth Class (age 9-10/10-11), Fifth Class (age 10-11/11-12) and Sixth Class (age 11-12/12-13).
+            </p>
+
+            <h4>Secondary School</h4>
+
+            <p>
+                Secondary school has each of the following, the Junior cycle, Transition year and the Senior Cycle. The Junior cycle consits of First Year (age 12–14), Second Year (age 13-15) and Third Year (age 14-16)– The Junior Certificate examination is sat in all subjects (usually 10 or 11) in early June. Many schools hold Mock Examinations (also known as Pre-Certificate Examinations) to prepare students around February. The mocks are not state examinations — independent companies provide the exam papers and marking schemes – and are therefore not mandatory across all schools.
+            </p>
+
+            <p>
+                Transition Year is a one-year informal course which is taken by an increasing number of students usually ages 15 or 16. The content of this is left to the school to model on the local needs. It is compulsory in some schools, but optional in others and some schools do not have it. Students may attend structured classes, but do not cover material relevant to the Senior Cycle or the Leaving Certificate exams, and therefore students who choose not to do this year are in no way academically disadvantaged when entering the Senior Cycle. The range of activities in Transition Year or Fourth Year differs greatly from school to school, but many include activities such as work experience placements, project work, international trips or exchanges and excursions. Students may participate in courses such as creative writing, sailing, film-making, public speaking and so on, or enter competitions in science, fashion, motor sport and others which would normally be too time-consuming for a full-time student. Proponents of TY  believe that it allows students an extra year to mature, engage in self-directed learning, explore career options and to choose subjects for senior cycle (the results of the Junior Certificate examination do not become available until midway through September, by which time students not taking Transition Year will already have chosen their classes and begun attending). Opponents believe that a year away from traditional study and the classroom environment can distract students and cause problems when they return to the Senior Cycle. They also believe that the activities undertaken in TY prevent some students from enrolling in this year, as they can be costly and most schools charge a fee of a few hundred euro to cover these activities.
+            </p>
+
+            <p>
+                And finally the Senior cycle which consists of Fifth Year (age 16–18 or if transition year is skipped age 15–17) and Sixth Year (age 17–19 or, again, if transition year is skipped age 16–18) – The Leaving Certificate examinations begin on the first Wednesday after the June bank holiday every year. Many schools have mocks to prepare students around February.
+            </p>
+
+            <h5>Further Education</h5>
+
+            <p>
+                Further education was for many years the "poor relation" of education[citation needed]. There were many different, often poorly defined[citation needed], awards offered by a multitude of bodies, both ad-hoc and statutory. Typical areas included apprenticeships, childcare, farming, retail, and tourism. These are typical areas of the economy that do not depend on multinational investment and recognition. There are many different types of further education awards, known as Post Leaving Certificates.
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="IrLaw" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Law in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Law in Ireland</h1>
+            <p>The constitution of ireland is the basic law of the state. It is known in Irelanda as Bunreacht Na hEireann.</p>
+
+            <p>As Ireland is a Catholic country, many of our laws are under the influence of the church's teaching.</p>
+
+            <p>The definition of rights covers five broad headings.</p>
+
+            <ul>
+                <li>Personal Rights</li>
+                <li>The Family</li>
+                <li>Education</li>
+                <li>Private Property</li>
+                <li>Religion</li>
+            </ul>
+
+            <h4>Personal Rights</h4>
+            <p>All citizens are equal, everyone has the right to express freely convictions peacefully without arms (weapons).</p>
+
+            <h4>The Family</h4>
+            <p>The state guarantees to protect your family- e.g. divorced or separated parents having equal acess to their child/children depending on their circumstances.</p>
+
+            <h4>Education</h4>
+            <p>Every child has the right to free primary education</p>
+
+            <h4>Private Property</h4>
+            <p>The right to hold your property is guaranteed.</p>
+
+            <h4>Religion</h4>
+            <p>The Irish state guarantees the freedom to practice your religious beliefs freely.</p>
+
+            <p>Citizens and in some cases non-citizens have the right to apply to be protected and have their rights guaranteed to them.</p>
+
+            <h3><b>Court Systems</b></h3>
+
+            <p><b>District court:</b> Minor criminal offenses are dealt with here. It has the powers to impose a fine of up to 100 euro and prison sentences of up to two years.</p>
+            <p><b>Circuit Court:</b> More serious offenses are dealt with here. They have the power to deal with all cases exept murder, piracy and allied offenses</p>
+            <p><b>High Court/ Central Criminal Court:</b> The High Court can deal with all cases including both civil and criminal.</p>
+            <p><b>Special Criminal Court:</b> This is all three courts sitting together.</p>
+            <p><b>Court of Criminal Appeal:</b> Criminal appeals from the Circuit Court, the Central Court and the Special Criminal Court are heard here.</p>
+            <p><b>Supreme Court:</b> The court of final appeal. The court hears appeals from the High Court of Criminal Appeal.</p>
+
+            <h3><b>The Police</b></h3>
+            <p>The police force in Ireland is called An Garda Siochana (meaning guardians of the piece). An Garda Siochana is a national force of approximately 10,500 members. The poliece force in Ireland are unarmed apart from some specialised units. The headquarters of the force is in Phoenix Park in Dublin. </p>
+            <p>An Garda Siochana training centre is located at Templemore in Co. Tipperary.</p>
+
+            <h3><b>Defense</b></h3>
+            <p>The role of the defense forces consist of the following:</p>
+
+            <ul>
+                <li>To defend the state against armed agression.</li>
+                <li>To aid the civil power when called upon .</li>
+                <li>To participate in United Nations missions in the course of international peace</li>
+            </ul>
+
+            <p>To provide a protection service in accordance with the state's obligations as a member of the European Union.</p>
+
+            <p>The forces may also be called upon to fulfill other desires e.g. search and rescue, air ambulance services, air transport, assistance on the occasion of a natural or other disasters, assistance in connection with the maintainence of essential services and combatting oil pollution at sea.</p>
+
+
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="mountainsinIreland" data-role="page">
+
+        <div data-role="header" style="background-color: #000000;">
+            <h1>mountains in Ireland</h1>
+            <a href="#intro_page" data-icon="delete">Back</a>
+        </div>
+
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>Mountains in Ireland</h1>
+
+            <h3>Carrantuohill:</h3>
+            <p>Carrantuohill is the highest peak in Ireland, located in County Kerry. It is 1,038 metres high and is the central peak in Macgillycuddy's Reeks range. The range is composed of red sandstone, which has been modified be geological ice action.</p>
+
+            <h3>Croagh Patrick</h3>
+            <p>Croagh Patrick, nicknamed the reek, is a 764 metre high mountain and an important site of pilgrimage in County Mayo in Ireland. It is climbed by pilgrims on reek Sunday every year, which is the last Sunday in July. It's believed that it is good for your spirit to climb Croagh Patrick.</p>
+
+            <h3>Mount Brandon</h3>
+            <p>Mt. Brandon is a 952 metre high mountain on the Dingle Peninsula in Counrt Kerry, Ireland. Mt. Brandon is popular with Irish Catholic pilgrims. The path to the peak is marked by small white crosses and the peak itself is topped by a large metal cross. The route has the greatest concentration of stones marked with the "cross of arcs", one of the main symbols of pilgrimage in Ireland.</p>
+
+            <h3>Benbulbin</h3>
+            <p>Benbulbin is 526 metres high, locatd in County Sligo, Ireland. It is part of the Dartry Mountains, in an area sometimes called "Yeats Country". Benbulbin is a large rock formation. Another translation for "Benbulbin" is "jaw-shaped peak". It was formed during the ice age, when Ireland was under glaciers.</p>
+
+            <h3>Caher</h3>
+            <p>Caher meaning "stone fort of the Fiana" is also called Caher East Top is the third-highest peak in Irleand at 1,001 metres. It lies to the southwest of Carrantuothill in County Kerry. It is classed as a Furth by the Scottish Mountaineering Club and is also on the list of "Irish Munros".</p>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#intro_page" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="IrShops" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Shops in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+
+            <h1><b>Shops for young people</b></h1>
+            <ul>
+                <li>Penneys</li>
+                <li>Hollister</li>
+                <li>River Island</li>
+                <li>Bershka</li>
+                <li>Juicy Coture</li>
+                <li>Debenhams</li>
+                <li>Zara</li>
+                <li>Abercrombie and Fitch</li>
+                <li>Jack Wills</li>
+                <li>Forever21</li>
+            </ul>
+
+            <h2><b>Some Shops Online</b></h2>
+            <ul>
+                <li>Boohoo.ie</li>
+                <li>MissGuided.co.uk</li>
+                <li>iClothing.ie</li>
+                <li>ASOS</li>
+                <li>Topshop</li>
+            </ul>
+
+            <h2><b>Irish Fashion Designers</b></h2>
+            <h3>Philip Treacy</h3>
+            <ul>
+
+                <li>Philip treacy was born on 26th May 1967 in Ahascragh, in County Galway in the West of Ireland.</li>
+                <li>During the early 1990's Philip designed hats for Alexander McQueen's white Haute Couture collection at Givenchy.</li>
+                <li>He was then awarded the title of British accessory designer of the year.</li>
+                <li>He designed Lady Gaga's telephone hat which she wore on the Jonathan Ross show.</li>
+            </ul>
+
+
+            <h3>Orla Keily</h3>
+            <ul>
+
+                <li>Orla Keily is an Irish fashion designer based in London.</li>
+                <li>She started off designing hats but moved on to bags and other items.</li>
+                <li>Keily qualified as a textile designer at the National College of Art and Design in Dublin and moved to New York.</li>
+                <li>She showed off a few of her designs like hats at the Royal College of Art and they were purchased by Harrods.</li>
+                <li>She was featured on a stamp issued by the Republic of Ireland in July 2010 with other Irish designers.</li>
+            </ul>
+
+            <h2>Street Style</h2>
+            <ul>
+                <li>The most popular pieces of clothing worn by Irish teenage girls would be shorts and tights with a top and flats or a skater skirt with tights, a top and docks or vans.</li>
+                <li>Sometimes girls like to wear baggy jumpers with leggings/jeans and vans during the winter season.</li>
+                <li>Our style is influenced by young celebrities such as Miley Cyrus or Beyonce.</li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="IrFood" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Traditional Irish food</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <h1>Traditional Irish food</h1>
+            <p>Some traditional Irish foods include:</p>
+            <ul>
+                <li>Brown bread</li>
+                <li>Barm Brack</li>
+                <li>Colcannon</li>
+                <li>Golden ham</li>
+                <li>Scones</li>
+                <li>Irish stew</li>
+            </ul>
+
+            <h3>Barm Brack</h3>
+            <p>Barm brack (Irish: bairin breac), also called Barnbrack or often shortened to brack, is a yeasted bread with added sultanas and rasins. Usually sold in flattened rounds, it is often served toasted with butter along with a cup of tea in the afternoon. The dough is sweeter than sandwich bread, but not as rich as cake, and the sultanas and raisins add flavour and texture to the final product. In Ireland it is sometimes called Bairin Breac, and the term is used as two words i its more common version. This may come from the Irish word bairin-a loaf- and breac- speckled (due to the raisins in it), hence it means speckled loaf.</p>
+
+            <h3>Colcannon</h3>
+            <p>The Irish potato dish is a delicious combination of mashed potatoes, cooked cabbage, and optional green onions. People make these potatoes for Sunday dinner or an everyday family meal as a side dish to ham, roast beef, corned beef, or sausages. It's easy to prepare and wonderful any time of the year.</p>
+
+            <h3>Scones</h3>
+            <p>A small, light, biscuitlike quick bread made of oatmeal, wheatflour, barley meal, and sometimes have rasins and sultanas in it.</p>
+
+            <h3>Irish stew</h3>
+            <p>Irish stew is a traditional stew made from lamb, or mutton (mutton is from sheep over a year old and is less tender, is fattier, has a stronger flavour and is the most traditional meat to use) as well as potatoes, onions, and parsley. It may sometimes also include carrots.</p>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="DubTransport" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Transport in Dublin</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <h1>Transport in Dublin</h1>
+            <p>There are many ways to get around Dublin, the most popular of them being by bus, luas, train, car, cycling or walking.</p>
+
+            <h3>Dublin bike scheme</h3>
+            <p>Dublinbikes is a self-service bike rental system open to everyone from 14 years of age. It enables you to travel through the city centre, commute between home and work and get out and about to enjoy Dublin city at your leisure. You can buy either a three day or an annual ticket. Once purchased, you can use the ticket to rent or return a db from from any station in the network. A 3 day ticket costs e5. The first 30 minutes of use is free onevery db.</p>
+
+            <h3>Commuting and traffic</h3>
+            <p>Dublin is widely accessible from many areas of Ireland. Being the geographical capital of Ireland, it is also the business capital. A large majority of jobs in Ireland are situated in Dublin, but this is a problem for house-hunters as property in Dublin tends to be very expensive. To solve this problem, people buy houses outside of Dublin and commute to work every day. Driving by car and taking the bus or train are the most popular forms of transport into Dublin. With so many people coming in and out of Dublin everyday, trafficgets bad, particularly in the mornings between 7:00 and 9:00 and in the evening from 4:00-7:00, so if you're on the move around Dublin try and avoid these hours, especially for public transport.</p>
+
+            <h3>Transport from airport</h3>
+            <p>Dublin airport is accessible by over 1,000 buses and coaches daily. From the airport, you can reach many areas around Dublin, as well as various towns and cities across Ireland.  Transport from the airport is made easy with buses such as the well known green bus bringing people to many destinations and taxis that will take you to your place of choice.</p>
+
+            <h3>Horse and carriage</h3>
+            <p>Horse drawn carriages are sometimes seen around Dublin. They are not a common form of transport for people living or working in Dublin but peoplecoing from further off places sometimes like to try the new experience and on any one day in Dublin, you might expect to see the odd horse drawn carriage trotting past.</p>
+
+
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="IrWeather" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Weather in Ireland</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>Ireland's Weather</h1>
+
+            <p>Weather in Ireland can be described as being mild, moist, and changable with a lot of rainfall. it is described as oceanic climate. Sometimes Ireland has generally warm Summers and mild Winters. Aorund the coaast is much windier than the inland areas. The sunniest months are May and June.</p>
+            <p>Severe weather is very common in Ireland, and in recent years there has been an increase in the amount of snowfall, especially around December and January. Thunderstorms are quite common in Ireland also, sometimes they are mild but there have been cases when trees have been ripped from the roots and building would have their roofs ripped off. Thunderstorms are more likely to occur in late Summer</p>
+            <p>It has been said in Ireland that people can get all four seasons in one, and there is some truth in that. Ireland's weather is notoriously hard to predict, so no matter how sunny the morning is the sun may follow.</p>
+            <p>The coldest months are January and February. The tempratures are usually around 5C sometimes lower.</p>
+
+
+
+
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="IrWeddings" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Irish Weddings</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>Irish Weddings</h1>
+
+            <p>Since the birth of Christianity weddings were held in the home of a priest or in a Church. Two candles burn separately during the ceremony which are then used to light one taller candle which is known as the Unity candle as it symbolises two people becoming one. Before the bride makes it this far proceedings will start with the proposal. Friends and family when enquiring about the 'big day' sometimes ask: "When are you giving us a big day out?" or "Should I buy a hat?"</p>
+
+            <p>this is then followed by the traditional things that she will need to have with her on her wedding: <q>"Something old, something new, something borrowed, something blue"</q> Something blue tends to be a blue garter worn around the thigh, which the groom has to remove using only his teeth much to the amusement of friends and family.</p>
+
+            <h3>Pre-Christian traditions</h3>
+            <p>Before Christianity found Ireland, couples who wished to show commitment to each other practised what was known as handfasting. This ritual was most probably caried over from pagan times and is the Celtic ceremony of unity. They could choose the length of the union either "'till death do us part" or to be together in the afterlife.</p>
+
+            <p>During the ritual the couple hold hands, right hand in right hand and left hand in left, with their wrists crossed. Ribbon or chord is then wrapped around the wrists in a figure eight to represent infinity. This is most probably where the saying "tying the knot" originated from.</p>
+
+            <h3>The Irish Wedding Dress</h3>
+            <p>With the Church booked and the date chosen, the Bride's attention would then turn towards her dress. The colour of her dress might reflect how sucessful the marriage is so she has to choose carefully</p>
+
+            <blockquote>
+                "Marry in white everything's right, 
+Marry in blue lover be true, 
+Marry in pink spirit's will sink, 
+Marry in Grey live far away, 
+Marry in brown live out of town, 
+Marry in green ashamed to be seen, 
+Marry in yellow ashamed of your fellow, 
+Marry in black wish you were back, 
+Marry in red wish you were dead, 
+Marry in tan be he'll be a loved man, 
+Marry in pearl you'll live in a whirl."
+            </blockquote>
+
+            <h3>Wedding Veil and Rings</h3>
+            <p>Traditionally Brides should not put on their veils themselves as it is very bad luck. The claddagh ring is the traditional wedding ring. The ring consists of two hands holding a crowned heart. If you are in a relationship the claddagh is worn with the heart facing outward, and if you are single the heart is worn to face your body.</p>
+
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="WhatsHot" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>What's Hot</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <h1>What's hot and what's not</h1>
+
+            <p>
+                Clothes that are hot in Ireland would be Hollister, Superdry and Jack Wills and clothes that are not hot are Abercrombie and Fitch because their clothes are waay to small for anyone of average weight
+            </p>
+
+            <img src= "./IrishPics/logo-jack-wills.jpg" width="300" height="200">
+
+            <img src="./IrishPics/hollister.jpg" width="300" height="200">
+
+            <img src="./IrishPics/abercrombie_fitch_logo.jpg" width="300" height="200">
+
+            <p>
+                Apps that are hot in Ireland would be Facebook, Wattpad, Twitter and Snapchat and apps that are not hot are Myspace, Bebo and Ask.fm
+            </p>
+
+            <img src="./IrishPics/Facebook-logo.jpg" width="300" height="200">
+
+            <img src="./IrishPics//twitter-logo-1024x385.jpg" width="300" height="200">
+
+            <img src="./IrishPics/bebo_logo_1.jpg" width="300" height="200">
+
+            <p>
+                Shoes that are hot in Ireland would be creepers, Converse  and Toms and shoes that are not hot are crocs because they are extremely uncomfortable!
+            </p>
+
+            <img src="./IrishPics/v-creeper-502s-b.jpg" width="300" height="200">
+
+            <img src="./IrishPics/m-red-university-rope-sole-s-s11.jpg" width="300" height="200">
+
+            <p>
+                Music that is hot in Ireland would be One Direction, Rihanna, Beyonce and Bruno Mars and music that is not hot is Rebecca Black! Money isn't always the answer
+            </p>
+
+            <img src="./IrishPics/one-direction-bern.jpg" width="300" height="200">
+
+            <img src="./IrishPics/beyonce.jpg" width="300" height="200">
+
+            <img src="./IrishPics/Rebecca-Black.jpg" width="300" height="200">
+
+            <p>
+                Off topic for a while I would just like to mention that the Irish stereotypes are not all true like we are not all ginger with freckles, we are not always drunk because we have jobs, we don’t always eat potatoes because we like variety in our meals just like you, we don’t all have a farmers tan and we aren't always fighting. Just to settle any curiosities you have about the Irish
+            </p>
+
+            <p>
+                Thanks for reading, I thoroughly hope you enjoyed reading this. Slan leat agus go raibh maith agat which means goodbye and thank you :-D
+            </p>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Ire_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+    <!--========================================================================FRANCE===============================================================-->
+    <div id="Fra_intro" data-role="page">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>France</h1>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <br />
+            <ol data-role="listview">
+                <li><a href="#Fr_histoire">Histoire</a></li>
+                <li><a href="#Fr_Géographie">Géographie</a></li>
+                <li><a href="#Fr_politique">Politique et économie</a></li>
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+
+    <!-- content of France --->
+    <div id="Fr_histoire" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Histoire de France </h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <h1>Histoire de France</h1>
+
+            <img src="./histoire/frise.jpg" width="300" height="200" alt="Frise chronologique de l'histoire de France" />
+            <p><em>Frise chronologique de l'histoire de France</em></p>
+            <br />
+            <ol data-role="listview">
+                <li><a href="#Fr_antiq">Antiquité</a></li>
+                <li><a href="#Fr_moyenage">Moyen Âge</a></li>
+                <li><a href="#Fr_tempmod">Temps modernes</a></li>
+                <li><a href="#Fr_epoq">Époque contemporaine</a></li>
+
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fra_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+    <div id="Fr_antiq" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h3>Antiquité</h3>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>
+                L'Antiquité est la première des époques de l'Histoire. C'est par le développement ou l'adoption de l'écriture que l'Antiquité succède à la Préhistoire.
+            </p>
+            <br />
+            <img src="./histoire/vercingetorix.jpg" width="300" height="200" alt="Vercingétorix deposant ses armes aux pieds de Jules César" />
+
+            <p><em>Vercingétorix deposant ses armes aux pieds de Jules César</em></p>
+
+            <p>
+                Vercingétorix déposant les armes aux pieds de César après sa défaite à la bataille d’Alésia où il avait réuni tous les peuples Gaulois. Cela termine la conquête de la Gaule en 52 av. JC Vercingétorix (né aux environs de -80 sur le territoire des Arvernes, dans l'actuelle Auvergne, mort le 26 septembre -46 à Rome) est le fils du chef gaulois de la tribu des Arvernes. Il réunit la plupart des peuples gaulois et leurs chefs pour tenter de repousser le général romain Jules César, allié des quelques autres tribus gauloises, à la fin de la guerre des Gaules (-58 à -51). Vaincu à Alésia en -52, il est emprisonné, puis, six ans plus tard, exécuté à Rome à la suite du triomphe de César.
+            </p>
+            <h4>La romanisation de la Gaule :</h4>
+
+            <p>
+                Les Gaulois ont dans leur ensemble assez bien accepté la domination romaine et la France est née du mélange de la culture celtique et de la culture gréco-romaine
+            </p>
+
+            <p>
+                Une culture gallo- romaine se développe après l’intégration de la Gaule à l’Empire romain.
+		Les élites gauloises adoptent la culture romaine : elles adoptent le latin, se font construire des villas sur le modèle romain, la France se couvre de monuments romains et de voies romaines : aqueducs comme le Pont du Gard, théâtres romains, arènes, comme à 	Nîmes, des thermes sont construits,…
+            </p>
+
+            <p>
+                Dès lors la Gaule vit comme l’une des provinces de l’immense empire romain .L’empereur romain Claude est d’ailleurs né à Lyon. 
+            </p>
+
+            <img src="./histoire/empire-romain.jpg" width="300" height="200" alt="Carte de l'Empire romain et des ses différentes provinces" />
+            <p><em>Carte de l'Empire romain et des ses différentes provinces</em></p>
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Fr_moyenage" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Moyen Âge</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>
+                Le Moyen Âge s'étend de 476 à 1492. Il débuta avec l'effondrement de l'Empire romain d'Occident et se termina par la Renaissance et les Grandes découvertes. Située entre l'Antiquité et l'époque moderne, la période est subdivisée entre le haut Moyen Âge (VIe Xe siècle), le Moyen Âge central (XIe XIIIe siècle) et le Moyen Âge tardif (XIVe XVe siècle).
+            </p>
+
+            <img src="./histoire/charlemagne.jpg" width="300" height="200" alt="Portrait de Charlemagne" />
+            <p><em>Portrait de Charlemagne</em></p>
+            <p>
+                Charlemagne fut un empereur des VIIIe et IXe siècle
+            </p>
+
+            <p>
+                Charlemagne du latin Carolus Magnus, ou Charles Ier dit « le Grand », né en 742 et mort le 28 janvier 814 à Aix-la-Chapelle, est un membre de la dynastie franque à laquelle il a donné son nom alors qu'il n'en est pas le fondateur : les Carolingiens. Fils de Pépin le Bref, il est roi des Francs à partir de 768, devient par conquête roi des Lombards en 774 et est couronné empereur à Rome par le pape Léon III le 25 décembre 800. Monarque guerrier, il agrandit son royaume par une série de campagnes militaires, en particulier contre les Saxons païens dont la soumission a été très difficile et très violente (772-804), mais aussi contre les Lombards en Italie et les Musulmans d'Espagne.
+            </p>
+
+            <img src="./histoire/chevaliers.jpg" width="300" height="200" alt="Reconstitution de deux chevaliers en armure sur leur cheval" />
+            <p><em>Reconstitution de deux chevaliers en armure sur leur cheval</em></p>
+            <p>
+                Les chevaliers étaient des nobles qui combattaient pour leurs suzerains au Moyen-âge.
+            </p>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Fr_tempmod" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Temps modernes</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <p>
+                L'époque moderne (ou les temps modernes) couvre l'époque historique commençant à la fin du Moyen Âge, généralement placée en 1453 ou en 1492. Selon les historiens français, cette période s'arrête avec la Révolution française, marquée généralement en 1789 ou 1792, et c'est l'époque contemporaine qui lui succède.
+            </p>
+
+            <img src="./histoire/louis-xiv.jpg" width="300" height="200" alt="Représentation de Louis XIV, le Roi Soleil" />
+            <p><em>Représentation de Louis XIV, le Roi Soleil</em></p>
+            <p>
+                Louis XIV, roi de France au XVIIe siècle
+            </p>
+
+            <p>
+                Louis XIV dit Louis le Grand ou le Roi-Soleil, né le 5 septembre 1638 à Saint-Germain-en-Laye et mort le 1er septembre 1715 à Versailles, est un roi de France et de Navarre. Il règne sur le royaume de France du 14 mai 1643 à sa mort le 1er septembre 1715. Louis XIV monte en 1643 sur le trône au décès de son père Louis XIII, le 14 mai 1643, quelques mois avant ses cinq ans. Il est le 64e roi de France, le 44e roi de Navarre et le troisième des rois de la famille Bourbon. Son règne de 72 ans est l’un des plus longs de l'histoire de l'Europe. À partir de 1682, Louis XIV dirige son royaume depuis le vaste château de Versailles, modèle architectural de nombreux palais européens et dont il a dirigé la construction. Une cour soumet la noblesse, étroitement surveillée, à un protocole très élaborée. Le prestige culturel s'y affirme grâce au financement royal en faveur d'artistes tels que Molière, Racine, Boileau, Lully, Le Brun et Le Nôtre, ce qui favorise l'apogée du classicisme français, qualifié, dès son vivant, de « Grand Siècle », voire de « Siècle de Louis XIV ».
+            </p>
+
+            <img src="./histoire/versailles.jpg" width="300" height="200" alt="Photo du château de Versailles et de ses jardins" />
+            <p><em>Photo du château de Versailles et de ses jardins</em></p>
+            <p>
+                Château de Versailles, demeure construite par Louis XIV, dont les magnifiques jardins ont été créés par Le Nôtre
+            </p>
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+    <div id="Fr_epoq" data-role="page" style="background-color: #000000;">
+
+        <div data-role="header" style="background-color: #000000;">
+            Époque contemporaine
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+            <p>
+                L'époque contemporaine débute en 1789 et se poursuit jusqu'à nos jours. Quelques historiens font finir l'époque moderne en 1895 (invention du cinématographe) ou en 1896 (rénovation des Jeux olympiques), la période suivante et actuelle étant l'ère ou « l'époque de communication, spectacles et sports ». Mais ceci peut être contesté, la première moitié du XXe siècle étant l'aboutissement des idéologies et des nationalismes nés aux XVIIIe et XIXe siècles, les idéologies se radicalisant au XXe siècle et utilisant les médias, spectacles et sports. C'est aussi à l'époque contemporaine que se produit un accroissement démographique sans précédent dans l'histoire de l'humanité.
+            </p>
+
+            <img src="./histoire/prise-bastille.jpg" width="300" height="200" alt="La prison royale de la Bastille est prise d'assaut" />
+            <p><em>La prison royale de la Bastille est prise d'assaut</em></p>
+            <p>
+                La prise de la Bastille lors de la Révolution Française le 14 juillet 1789. Cette date est devenue la fête nationale.
+            </p>
+
+            <p>
+                Cette révolution met fin à la monarchie absolue en France et elle est remplacée par une monarchie constitutionnelle en 1791. La Révolution française est à l’origine d’une déclaration des droits de l’homme et du citoyen qui transforme profondément la société de l’époque : les hommes sont désormais considérés comme libres et égaux en droits et la souveraineté émane désormais du peuple et non plus d’une monarchie de droit divin. La liberté de choisir sa religion est reconnue. La Révolution est aussi à l’origine des structures politiques modernes de la France : la France est découpée en départements, les poids et mesures sont unifiés sur tout le territoire français.
+            </p>
+
+            <p>
+                En 1792 la France devient une République, mais celle-ci est éphémère.
+            </p>
+
+            <p>
+                En 1799 le coup d’Etat du général Bonaparte signe la mort de la République.
+            </p>
+
+            <p>
+                La France  connaît en réalité une très forte instabilité politique tout le long du XIXème siècle : entre 1791 et 1871 elle connaît : la monarchie constitutionnelle, le 1er empire et le second empire, 3 révolutions (les 3 Glorieuses en 1830, la révolution de 1848 et l’insurrection de la commune de Paris en 1871)  et  2 républiques.
+            </p>
+
+            <img src="./histoire/napoleon-bonaparte.jpg" width="300" height="200" alt="Napoléon Ier dans sa tenue d'empereur, s'inspirant de celle des empereurs romains." />
+            <p>
+                <em>Napoléon Bonaparte, empereur des Français au XIXe</em>
+            </p>
+
+            <p>
+                Napoléon Ier, né le 15 août 1769 à Ajaccio en Corse, dans le royaume de France, et mort le 5 mai 1821 sur l'île Sainte-Hélène, dans l'océan Atlantique, est le premier empereur des Français, du 18 mai 1804 au 6 avril 1814 et du 20 mars 1815 au 22 juin 1815. Second enfant de Charles Bonaparte et Letitia Ramolino, Napoléon Bonaparte est d'abord un militaire, général dans les armées de la Première République française, née de la Révolution, commandant en chef de l'armée d'Italie puis de l'armée d'Orient. Il parvient au pouvoir en 1799 par le coup d'État du 18 brumaire (9 novembre) et est Premier consul jusqu'au 2 août 1802, puis consul à vie jusqu'au 18 mai 1804, date à laquelle il est proclamé empereur. Enfin il est sacré empereur en la cathédrale Notre-Dame de Paris le 2 décembre 1804 par le pape Pie VII. En tant que général en chef et chef d'état, Napoléon tente de briser les coalitions montées et financées par le Royaume de Grande-Bretagne et qui rassemblent depuis 1792 les monarchies européennes contre la France et son régime né de la Révolution. Il conduit pour cela les armées françaises d'Italie au Nil et d'Autriche à la Prusse et à la Pologne : ses nombreuses et brillantes victoires (Arcole, Rivoli, Pyramides, Marengo, Austerlitz, Iéna, Friedland), dans des campagnes militaires rapides, disloquent les quatre premières coalitions. Les paix successives, qui mettent un terme à chacune de ces coalitions, renforcent la France et donnent à son chef, Napoléon, un degré de puissance jusqu'alors rarement égalé en Europe lors de la paix de Tilsit (1807).
+            </p>
+
+            <img src="./histoire/usines.jpg" width="300" height="200" alt="Photo en noir et blanc de plusieurs usines crachant de la fumée" />
+            <p>
+                <em>Une usine représentant la révolution industrielle</em>
+            </p>
+
+            <img src="./histoire/freres-lumiere.jpg" width="300" height="200" alt="Les frères Lumière, inventeurs du cinématographe, nés à Besançon en Franche-Comté" />
+            <p>
+                <em>Les frères Lumière, inventeurs du cinématographe, nés à Besançon en Franche-Comté</em>
+            </p>
+
+            <img src="./histoire/locomotive.jpg" width="300" height="200" alt="La locomotive à vapeur, innovation technologique du XIXe siècle" />
+            <p><em>La locomotive à vapeur, innovation technologique du XIXe siècle</em></p>
+            <img src="./histoire/anneaux-olympiques.jpg" width="300" height="200" alt="Les cinq anneaux olympinques bleu, jaune, noir, vert et rouge" />
+            <p><em>Les cinq anneaux olympinques bleu, jaune, noir, vert et rouge</em></p>
+            <p>
+                Les anneaux représentants les cinq continents. C’est Pierre de Coubertin, un Français, qui a inventé les Jeux Olympiques modernes, dont la 1ère édition a lieu à Athènes en 1896.
+            </p>
+
+            <img src="./histoire/degaulle.jpg" width="300" height="200" alt="De Gaulle lançant l'appel du 18 juin" />
+            <p><em>De Gaulle lançant l'appel du 18 juin</em></p>
+
+            <p>
+                Charles de Gaulle fut le 1er président de la Ve République, celle sous laquelle nous vivons actuellement.
+            </p>
+
+            <p>
+                Charles de Gaulle, né le 22 novembre 1890 à Lille et mort le 9 novembre 1970 à Colombey-les-Deux-Églises, est un général, résistant, écrivain et homme d'État français. Il est à la tête de la France du 3 juin 1944 au 20 janvier 1946 en tant que premier président du Gouvernement provisoire de la République française, puis du 8 janvier 1959 au 28 avril 1969 comme 18e président de la République française. Chef de la France libre puis dirigeant du Comité français de Libération nationale pendant la Seconde Guerre mondiale, président du Gouvernement provisoire de la République française de 1944 à 1946, président du Conseil des ministres français de 1958 à 1959, créateur de la Ve République fondée en 1958, il devient le 18e Président de la République française du 8 janvier 1959 au 28 avril 1969. Il est le premier à occuper la magistrature suprême sous la Cinquième République. Il rejette l'armistice demandé par Pétain à l'Allemagne nazie. De Londres, il lance, à la BBC, l'appel du 18 juin au peuple français pour résister et rejoindre les Forces françaises libres. Condamné à mort, et déclaré déchu de la nationalité Française par décret du 08 décembre 1940 par le régime de Vichy, il veut incarner la légitimité de la France et être reconnu en tant que puissance par les Alliés. Ne contrôlant que quelques colonies mais reconnu par la Résistance, il fusionne, en 1943, la France libre au sein du Comité français de Libération nationale, dont il finit par prendre la direction. Il dirige le pays à la Libération. Favorable à un exécutif fort, il s'oppose aux projets parlementaires des partis et démissionne en 1946. Il fonde le Rassemblement du peuple français (RPF), mais son refus de tout compromis avec le « régime des partis » l'isole dans une traversée du désert. De Gaulle revient au pouvoir lors de la crise du 13 mai 1958, pendant la guerre d'Algérie. Investi président du Conseil, il fait approuver la Ve République. Élu président de la République, il veut une « politique de grandeur » de la France. Il affermit les institutions, la monnaie (nouveau franc) et donne un rôle de troisième voie économique à un État planificateur et modernisateur de l'industrie. Il renonce par étapes à l'Algérie française, malgré l'opposition des Pieds-Noirs et des militaires, qui avaient favorisé son retour. Il décolonise aussi l'Afrique noire, en y maintenant l'influence française. De Gaulle prône l'« indépendance nationale » en rupture avec le fédéralisme européen et le partage de Yalta : il préconise donc une « Europe des nations » qui irait « de l'Atlantique à l'Oural », réalise la force de dissuasion nucléaire française, retire la France du commandement militaire de l'OTAN, pose un veto à l'entrée du Royaume-Uni dans la Communauté européenne, soutient le « Québec libre », condamne la guerre du Viêt Nam et reconnait la Chine communiste.
+            </p>
+
+            <h3>L'Europe</h3>
+
+            <p>
+                En Mai 1950 c’est un homme politique français Robert Schuman qui propose aux pays européens de mettre en commun leur production de charbon et d’acier et d‘en confier la gestion à une instance indépendante et supranationale, la Haute autorité. En avril 1951 le traité de Paris institue la CECA accepté par 6 pays: France, RFA, Italie, Pays-Bas, Belgique, Luxembourg : c’est le 1èr embryon d’une construction européenne. En 1957 suite à la signature du traité de Rome les 6 mêmes pays créent la CEE, communauté économique européenne. Depuis la CEE s’est étoffée et approfondie pour devenir l’Union européenne comprenons désormais 28 Etats. Le destin de la France est donc lié depuis 1951 à celui de ses voisins européens.
+            </p>
+
+            <img src="./histoire/europe.jpg" width="300" height="200" alt="Les pères de l'Europe avec leurs pays" />
+            <p><em>Les pères de l'Europe avec leurs pays</em></p>
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fr_histoire" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+
+
+    </div>
+
+
+    <div id="Fr_politique" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Politique et Economie </h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <ol data-role="listview">
+                <li><a href="#Fr_Pol">Politique</a></li>
+                <li><a href="#Fr_Economie">Economie</a></li>
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#Fra_intro" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+    <div id="Fr_Pol" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Politique</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+
+
+            <p>
+                L’instauration de la République en France date de 1789 mais elle se caractérise par une certaine instabilité jusqu’à 1879. C’est lors de la 3ème République sous la gouvernance des ministères de Jules Ferry de 1879 à 1885 que la république marque les esprits. 
+Depuis 1958, le régime français est celui  de la 5ième République.  Le président est élu pour  5 ans depuis 2000, auparavant son mandat  était de  7 ans. La France est un des rares pays laïque en Europe et même dans le monde et ce depuis 1905 suite a la séparation de l’État et de l’Eglise. La France est donc laïque depuis 109 ans. 
+            </p>
+
+            <p>
+                En France le président est élu par tous les citoyens, voici un petit schéma récapitulatif :
+            </p>
+
+            <img src="./PolEcon/Image1.jpg" width="300" height="200" alt="Schéma droit de vote">
+            <p><em>Schéma droit de vote</em></p>
+            <p>
+                Les candidats font des  campagnes éléctorales pour se faire élire :
+            </p>
+
+            <img src="./PolEcon/Image2.jpg" width="600" height="400" alt="Dessin discours humoristique">
+            <p><em>Dessin discours humoristique</em></p>
+            <p>
+                Les politiques  peuvent envoyer des lettres à leurs électeurs :
+            </p>
+
+            <img src="./PolEcon/Image3.jpg" width="300" height="100" alt="Dessin humoristique naufragés">
+            <p><em>Dessin humoristique naufragés</em></p>
+            <p>
+                Le pouvoir est réparti entre plusieurs institutions :
+            </p>
+            <ul>
+                <li>le président et son gouvernement détiennent le pouvoir exécutif </li>
+                <li>le pouvoir législatif quand à lui est détenu par l’assemblée nationale  ainsi que par le sénat sous la 5ième République, ils peuvent voter la motion de censure qui permet de forcer le gouvernement à démissionner.</li>
+                <li>et enfin le pouvoir judiciaire est exercé par les magistrats et les juges.</li>
+            </ul>
+
+
+            <img src="./PolEcon/Image4.jpg" width="300" height="200" alt="Caricature Sénat">
+            <p><em>Caricature Sénat</em></p>
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Fr_politique" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="Fr_Economie" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Economie</h2>
+
+        </div>
+
+        <div data-role="content" style="background-color: #000000;">
+
+            <div id="wrapper1">
+                <img src="./PolEcon/Image5.jpg" width="300" height="200" alt="Caricature économie">
+            </div>
+
+
+            <p><em>Caricature économie</em></p>
+
+            <p>
+                La France est la 5ième puissance économique mondiale derrière les Etats-Unis, la Chine, le Japon, l'Allemagne et devant le Royaume-Uni. Le PIB (Produit intérieur brut : ensembles des richesses produites à l’intérieur d’un pays) est de 1931 milliards d’euros en 2012. 
+L’économie française peut se répartir en 3 secteurs :   
+            </p>
+            <ol>
+                <li>le secteur tertiaire occupe 71,8 % de la population active </li>
+                <li>le secteur primaire occupe  seulement 3.8% de la population active </li>
+                <li>le secteur secondaire occupe 24,3% de la population active.</li>
+            </ol>
+            <p>
+                L'économie française est donc principalement une économie de services 
+Voici un graphique circulaire des principaux secteurs d’activité en France :
+            </p>
+            <div id="wrapper2">
+                <img src="./PolEcon/Image6.jpg" width="300" height="200" alt="Graphique répartition secteur économique">
+            </div>
+            <p><em>Graphique répartition secteur économique</em></p>
+            <p>
+                La France comme la plupart des pays riches est en crise. Ce phénomène est apparu au début des années 70 et a un impact sur la situation des finances publiques même si à l’époque le déficit  de l’Etat était minime. Avec la crise de 2008 le déficit s’est aggravé. Cela peut s’expliquer, entre autres,  par l’augmentation du chômage qui a pour effet de :
+- réduire les recettes de l’Etat (baisse des cotisations sociales) car il y a moins de personnes ayant un emploi  
+- augmenter les dépenses de l’Etat (hausse du nombre de bénéficiaires de l’indemnité chômage)
+
+Voici les dettes des pays de l’Europe dans l’ordre décroissant :
+            </p>
+            <div id="wrapper3">
+                <img src="./PolEcon/Image7.jpg" width="300" height="200" alt="Graphique dette publique">
+            </div>
+            <p><em>Graphique dette publique</em></p>
+            <p>
+                Voici un petit graphique de l’évolution du déficit public français :
+            </p>
+            <div id="wrapper4">
+                <img src="./PolEcon/Image8.jpg" width="300" height="200" alt="Courbe du déficit publique français">
+            </div>
+            <p><em>Courbe du déficit publique français</em></p>
+            <p>
+                La crise engendre également une hausse de la pauvreté qui menace la cohésion sociale
+
+La crise provoque divers problèmes :
+            </p>
+            <div id="wrapper5">
+                <img src="./PolEcon/Image9.jpg" width="300" height="200" alt="Caricature problèmes français">
+            </div>
+            <p><em>Caricature problèmes français</em></p>
+
+            <p>
+                La France est un des pays fondateurs de l’Union Européenne qui est une zone économiquement développée. Le 1er janvier 1999, l'euro a officiellement remplacé le franc, ancienne monnaie nationale ; les billets et les pièces en euros sont introduits en 2002 et remplacent rapidement les précédents billets et pièces. 
+
+En France d’après un rapport de l’INSEE (institut national des statistiques et de l’étude économique) en 2013 le revenu disponible dans l’ensemble des ménages (tous les revenus des français additionné) était de 1326,3 milliards d’euros et 83,7% étaient dédié à la consommation.
+
+Ci-dessous voici un graphique sur la répartition de la part des différents postes dans la consommation:
+            </p>
+            <div id="wrapper6">
+                <img src="./PolEcon/Image10.jpg" width="300" height="200" alt="Tableau de part de consommation dans une famille">
+            </div>
+            <p><em>Tableau de part de consommation dans une famille</em></p>
+            <p>
+                Ce tableau nous donne l’évolution de la consommation  entre 1960 et 2009. Nous pouvons  constater une diminution du coefficient budgétaire associé à l’alimentation et à l’habillement ce qui signifie que le budget moyen d’un ménage a augmenté. En effet, plus le revenu augmente  et plus le coefficient budgétaire associé à ces dépenses ne diminue car le budget qu’il leur est dédié n’augmente pas ou peu alors que le revenu augmente.                                                                                 
+En France l’intervention de l’Etat dans l’économie est importante. La France est l’un des pays où il y a le plus d’impôts. La croissance du PIB par habitant français a été plus faible que celle de certains autres pays développés, en particulier les États-Unis, au cours des deux dernières décennies. Il y a 280 000 millionnaires habitant en France en 2010, soit 0,45 % de la population.
+            </p>
+
+            <h3>Sources :</h3>
+
+            <div id="wrapper7">
+                <img src="./PolEcon/Image11.jpg" width="300" height="200" alt="Source d'eau">
+            </div>
+            <p><em>Dessin humoristique naufragés</em></p>
+            <div id="wrapper8">
+                <img src="./PolEcon/Image12.jpg" width="300" height="200" alt="Source d'eau">
+            </div>
+            <p><em>Source d'eau</em></p>
+            <br />
+
+            <h3>Wikipédia</h3>
+            <br />
+            <p>L’INSEE</p>
+            <br />
+            <br />
+            <a href="http://www.droitdevote.net">http://www.droitdevote.net</a>
+            <br />
+            <br />
+            <a href="http://www.reseauborreliose.fr/index.php/post/2011/12/14/Tiques,-%C3%A9thique-et-politique">http://www.reseauborreliose.fr/index.php/post/2011/12/14/Tiques,-%C3%A9thique-et-politique</a>
+            <br />
+            <br />
+            <a href="http://regardailleurs.fr/2010/03/14/pourquoi-je-nai-pas-vote/">http://regardailleurs.fr/2010/03/14/pourquoi-je-nai-pas-vote/</a>
+            <br />
+            <br />
+            <a href="http://directinfo.webmanagercenter.com/2012/07/28/tunisie-politique-elections-marzouki-fait-de-la-resistence-dans-les-sondages/">http://directinfo.webmanagercenter.com/2012/07/28/tunisie-politique-elections-marzouki-fait-de-la-resistence-dans-les-sondages/</a>
+            <br />
+            <br />
+            <a href="http://www.actualitix.com/graphiques-dettes-des-pays-ue.html">http://www.actualitix.com/graphiques-dettes-des-pays-ue.html</a>
+            <br />
+            <br />
+            <a href="http://www.gagdz.com/wp-content/uploads/2013/05/Caricature_gagdz_7a43c_8031.jpg">http://www.gagdz.com/wp-content/uploads/2013/05/Caricature_gagdz_7a43c_8031.jpg</a>
+        </div>
+    </div>
+
+
+
+
+
+    <!--========================================================================HOLLAND===============================================================-->
+
+    <div id="Holl_intro" data-role="page">
+        <div data-role="header" style="background-color: #000000;">
+            <h1>Holland</h1>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+            <br />
+            <ol data-role="listview">
+                <li><a href="#Ho_sport">Sport</a></li>
+
+            </ol>
+
+        </div>
+        <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+            <a href="#menu" data-role="button" data-icon="arrow-l">back</a>
+        </div>
+    </div>
+
+
+
+
+    <div id="Ho_sport" data-role="page" style="background-color: #000000;">
+        <div data-role="header" style="background-color: #000000;">
+            <h2>Sport</h2>
+
+        </div>
+        <div data-role="content" style="background-color: #000000;">
+
+            <p>The national sports of The Netherlands are cycling, skating, horse riding, soccer and Hockey.</p>
+            <img src="./Holl_sport/sport1.jpg" alt="two hockey sticks and a ball" width="310">
+            <p><em>two hockey sticks and a ball</em></p>
+            <p>The women team of The Netherlands is ranked first in the world ranking of hockey.</p>
+            <img src="./Holl_sport/sport2.jpg" alt="3 skaters in orange" width="310">
+            <p><em>3 skaters in orange</em></p>
+            <p>
+                The skaters of The Netherlands won many medals during the winter olympics in Sochi.<br />
+                Anky van Grunsven has won many medals with horse riding.
+            </p>
+            <p>The soccer team was in 2010 almost world champion, but they were beaten by Spain in the finals.</p>
+
+            <iframe class="youtube-player" width="300" height="200" src="http://www.youtube.com/embed/QLT2haLq61Q"></iframe>
+
+
+            <h2>Bauke Mollema</h2>
+            <img src="./Holl_sport/bauke-mollema1.jpg" alt="Bauke Mollema on bike" width="310">
+            <p><em>Bauke Mollema on bike</em></p>
+            <p>Bauke Mollema is a cyclist. He started in 2008. He is famous because he cycles in the tour de France. In 2013 he ended sixth.</p>
+            <img src="./Holl_sport/bauke-mollema2.jpg" alt="Bauke Mollema and 3 other cyclists" width="310">
+            <p><em>Bauke Mollema and 3 other cyclists</em></p>
+            <p>He is member of the team Belkin. Previously he was member of the teams Rabobank and Blanco.</p>
+            <iframe class="youtube-player" width="300" height="200" src="http://www.youtube.com/embed/R59euuxBYGc"></iframe>
+
+
+            <div data-role="footer" data-position="fixed" style="background-color: #000000;">
+                <a href="#Holl_intro" data-role="button" data-icon="arrow-l">back</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
